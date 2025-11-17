@@ -1,0 +1,53 @@
+.margin .we-are-here {
+    text-decoration: underline;
+}
+
+header .margin {
+    border-right: 5px solid rgb(128, 128, 8);
+    height: fit-content;
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.margin li {
+    list-style: none;
+    padding: 5px 0;
+}
+
+.header-positioning {
+    display: grid;
+    grid-template-columns: 0.25fr 1fr;
+    width: 100%;
+    border-bottom: 5px solid rgb(128, 128, 8);
+    justify-content: center;
+}
+
+.website-head {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    min-width: 0;
+    padding-top: 40%;
+    padding-bottom: 5%;
+}
+
+.website-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#highlight-collection h3 {
+    text-align: center;
+    font-weight: 600;
+}
