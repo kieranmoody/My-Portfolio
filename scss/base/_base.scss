@@ -1,8 +1,19 @@
+@use "../utilities/index" as *;
+
 html { /*Handles default colors and font-styles*/
-    background-color: #eeeee0;
-    color: rgb(151, 2, 2);
-    font-size: 12px;
-    font-weight: 400;
+    background-color: $background-color;
+    color: $base-font-color;
+    font-family: $default-text-family;
+    font-size: $default-text-size;
+    font-weight: $default-text-weight;
+    line-height: $default-text-lineheight;
+    letter-spacing: $default-text-letterspacing;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $heading-text-family;
+    font-size: $heading-text-size;
+    font-weight: $heading-text-weight;
 }
 
 * { /*Gives everything a box-border*/

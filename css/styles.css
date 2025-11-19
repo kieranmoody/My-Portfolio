@@ -1,3 +1,5 @@
+/*Colors throughout the page*/
+/*Text-families*/
 /*Normalize*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -339,9 +341,18 @@ cite {
 /*Normalize*/
 html { /*Handles default colors and font-styles*/
   background-color: #eeeee0;
-  color: rgb(151, 2, 2);
-  font-size: 12px;
+  color: black;
+  font-family: "Newsreader", sans-serif;
+  font-size: 0.875rem;
   font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: 0.4px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Noticia Text", serif;
+  font-size: 1.625rem;
+  font-weight: 700;
 }
 
 * { /*Gives everything a box-border*/
@@ -393,13 +404,12 @@ header .margin { /*Handles the style of the margin and its size*/
   display: block;
   width: 100%;
   padding: 10px 0;
-  font-size: 24px;
+  font-size: 1.875rem;
   font-weight: 600;
 }
 
 #highlight-collection h3 { /*Sets the positioning of the highlight heading*/
   text-align: center;
-  font-weight: 600;
 }
 
 /*# sourceMappingURL=styles.css.map */
