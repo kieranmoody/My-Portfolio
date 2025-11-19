@@ -337,22 +337,22 @@ cite {
 }
 
 /*Normalize*/
-html {
+html { /*Handles default colors and font-styles*/
   background-color: #eeeee0;
   color: rgb(151, 2, 2);
   font-size: 12px;
   font-weight: 400;
 }
 
-* {
+* { /*Gives everything a box-border*/
   box-sizing: border-box;
 }
 
-.margin .we-are-here {
+.margin .we-are-here { /*Underlines the part of the margin representing the current page*/
   text-decoration: underline;
 }
 
-header .margin {
+header .margin { /*Handles the style of the margin and its size*/
   border-right: 5px solid rgb(128, 128, 8);
   height: fit-content;
   width: 100%;
@@ -361,12 +361,12 @@ header .margin {
   padding: 0 15px;
 }
 
-.margin li {
+.margin li { /*Controls what happens with the specific parts of the list*/
   list-style: none;
   padding: 5px 0;
 }
 
-.header-positioning {
+.header-positioning { /*Controls the header, and the proportions of the two sections*/
   display: grid;
   grid-template-columns: 0.25fr 1fr;
   width: 100%;
@@ -374,7 +374,7 @@ header .margin {
   justify-content: center;
 }
 
-.website-head {
+.website-head { /*Controls the title-section of the header and how its content is seperated*/
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -384,12 +384,12 @@ header .margin {
   padding-bottom: 5%;
 }
 
-.website-title {
+.website-title { /*Makes the title show vertically*/
   display: flex;
   flex-direction: column;
 }
 
-.logo {
+.logo { /*Sets the aethetics of the logo*/
   display: block;
   width: 100%;
   padding: 10px 0;
@@ -397,7 +397,7 @@ header .margin {
   font-weight: 600;
 }
 
-#highlight-collection h3 {
+#highlight-collection h3 { /*Sets the positioning of the highlight heading*/
   text-align: center;
   font-weight: 600;
 }
