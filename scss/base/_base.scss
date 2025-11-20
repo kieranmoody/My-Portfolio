@@ -19,3 +19,7 @@ h1, h2, h3, h4, h5, h6 {
 * { /*Gives everything a box-border*/
      box-sizing: border-box;
 }
+
+html img { /*Makes sure no images go off screen or force scrollbars*/
+    max-width: 100%;
+}

@@ -42,22 +42,24 @@
                     </div>
                 </div>
             </div>
-            <div class="website-head"> <!--Controls the positioning within the container (padding, etc)-->
+            <div class="website-head"> 
                 <img src="../images/title-background.jpg" class="title-image">
-                <div class="website-title"> <!--How is the title framed-->
-                    <div>
-                        My Name is Kieran Moody
+                <div class="title-container"> <!--Contains the overlay- this is where the flex is--> <!--Controls the positioning within the container (padding, etc)-->
+                    <div class="website-title"> <!--How is the title framed-->
+                        <div>
+                            <h1>My Name is Kieran Moody</h1>
+                        </div>
+                        <div>
+                            I am a Web Developer
+                        </div>
                     </div>
-                    <div>
-                        I am a Web Developer
-                    </div>
-                </div>
-                <div class="scroll-down">
-                    <div>
-                        Scroll Down
-                    </div>
-                    <div>
-                        <span id="down-arrow"></span>
+                    <div class="scroll-down">
+                        <div>
+                            Scroll Down
+                        </div>
+                        <div>
+                            <span id="down-arrow"></span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -69,14 +71,31 @@
                 <div id="highlight-collection"> <!--Groups the highlight section (including the heading)-->
                     <h3>Highlights</h3>
                     <div id="highlights"> <!--Controls the positioning of both highlights as a group-->
-                        <div id="highlight-one"></div> <!--Groups Highlight One together-->
-                        <div id="highlight-two"></div> <!--Groups Highlight Two together-->
+                        <div class="highlight-box" id="highlight-one"> <!--Groups Highlight One together-->
+                            <img src="../images/under-construction-temp-one.jpg">
+                            <div class="highlight-paragraph">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis imperdiet sagittis. Integer mi dui, dapibus vel nunc in, malesuada accumsan elit. Vivamus ac urna aliquam, condimentum arcu non, dictum dui. Etiam sagittis, erat id feugiat luctus, odio nibh mollis elit, at sagittis metus magna in urna. Maecenas quis ipsum odio.</p>
+                            </div>
+                            <button class="button">READ MORE</button>
+                        </div>
+                        <div class="highlight-box" id="highlight-two"> <!--Groups Highlight Two together-->
+                            <img src="../images/under-construction-temp-two.webp">
+                            <div class="highlight-paragraph">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis imperdiet sagittis. Integer mi dui, dapibus vel nunc in, malesuada accumsan elit. Vivamus ac urna aliquam, condimentum arcu non, dictum dui. Etiam sagittis, erat id feugiat luctus, odio nibh mollis elit, at sagittis metus magna in urna. Maecenas quis ipsum odio.</p>
+                            </div>
+                            <button class="button">READ MORE</button>
+
+                        </div>
+
                     </div>
                 </div>
                 <div id="treehouse-collection"> <!--Controls the positioning of both highlights as a group-->
+                    <button class="button">Learn More!</button>
                     <div id="treehouse-info"> <!--Groups the treehouse information-->
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis imperdiet sagittis. Integer mi dui, dapibus vel nunc in, malesuada accumsan elit. Vivamus ac urna aliquam, condimentum arcu non, dictum dui. Etiam sagittis, erat id feugiat luctus, odio nibh mollis elit, at sagittis metus magna in urna. Maecenas quis ipsum odio.</p>
                     </div>
                     <div id="treehouse-highlight"> <!--Controls the treehouse image-->
+                        <img src="../images/treehouse-score.png">
                     </div>
                 </div>
             </div>
@@ -87,32 +106,39 @@
                             Get in Touch
                         </h5>
                     </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras convallis imperdiet sagittis. Integer mi dui, dapibus vel nunc in, malesuada accumsan elit. Vivamus ac urna aliquam, condimentum arcu non, dictum dui. Etiam sagittis, erat id feugiat luctus, odio nibh mollis elit, at sagittis metus magna in urna. Maecenas quis ipsum odio.</p>
+                    </div>
+                    <div id="my-details">
+                        <p>07969 852266</p>
+                        <p>kieranmoody127@gmail.com</p>
+                    </div>
                 </div>
                 <div id="foot-buttons">
                     <div id="message-info"> <!--Controls the input options, with the children controlling layout-->
-                        <div>
-                            <a>First Name*</a>
-                            <a>Last Name*</a>
+                        <div id="contact-names">
+                            <input placeholder="*First Name..." class="row-one" id="first-name" name="input" type="text" value>
+                            <input placeholder="*Last Name..." class="row-one" id="last-name" name="input" type="text" value>
                         </div>
                         <div>
                             <div>
-                                <a>Email Address*</a>
-                                <a>Subject</a>
+                                <input placeholder="*Email Address..." class="row-two" id="email-address" name="input" type="text" value>
+                                <input placeholder="Subject..." class="row-two" id="subject" name="input" type="text" value>
                             </div>
                             <div>
-                                <a>Message*</a>
+                                <input placeholder="*Message..." id="message" name="input" type="text" value>
                             </div>
                         </div>
                     </div>
                     <div id="submit-button">
-                        <a>Submit</a>
+                        <button class="button">Submit</button>
                     </div>
                 </div>
             </div>
         </div>
     </main>
     <footer>
-        <div> <!--Controls the positioning of the back to top link-->
+        <div class="back-to-top"> <!--Controls the positioning of the back to top link-->
             <div>
                 <spam id="up-arrow"></spam>
             </div>
