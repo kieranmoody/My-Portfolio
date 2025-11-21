@@ -11,6 +11,8 @@ header .margin { /*Handles the style of the margin and its size*/
     display: block;
     text-align: center;
     padding: 0 15px;
+    background-color: peachpuff;
+    font-size: 0.625rem;
 }
 
 .margin li { /*Controls what happens with the specific parts of the list*/
@@ -18,9 +20,16 @@ header .margin { /*Handles the style of the margin and its size*/
     padding: 5px 0;
 }
 
+.social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+}
+
 .header-positioning { /*Controls the header, and the proportions of the two sections*/
     display: grid;
-    grid-template-columns: 0.25fr 1fr;
+    grid-template-columns: 0.20fr 1fr;
     width: 100%;
     border-bottom: 5px solid $border-colors;
     justify-content: center;
@@ -30,7 +39,7 @@ header .margin { /*Handles the style of the margin and its size*/
     position: relative;
 }
 
-.title-container {
+.title-container { /*Positioning of the title overlay*/
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -67,7 +76,7 @@ header .margin { /*Handles the style of the margin and its size*/
     padding-bottom: 10px;
 }
 
-.title-image {
+.title-image { /*Makes sure the title fills the container*/
     object-fit: cover;
     height: 100%;
     width: 100%;
@@ -75,22 +84,22 @@ header .margin { /*Handles the style of the margin and its size*/
     z-index: 1
 }
 
-.meat-positioning {
+.meat-positioning { /*Positioning of the main body of text, also a grid for later use*/
     padding: 15px;
     display: grid;
 }
 
-.highlight-box img {
+.highlight-box img { /*Sets the proportions of the image*/
     height: 20vh;
     width: 100%;
 }
 
-#highlights {
+#highlights { /*The positioning of the highlights section*/
     display: flex;
     padding-bottom: 10px;
 }
 
-.highlight-box {
+.highlight-box { /*The positioning of each highlight box*/
     width: 50%;
     height:fit-content;
 }
@@ -109,13 +118,13 @@ header .margin { /*Handles the style of the margin and its size*/
 }
 
 /*Treehouse Index*/
-#treehouse-collection {
+#treehouse-collection { /*The entire section*/
     display: flex;
     flex-direction: column-reverse;
     padding-bottom: 10px;
 }
 
-#treehouse-info {
+#treehouse-info { 
     text-align: center;
     padding: 10px 10px;
 }
@@ -126,13 +135,13 @@ header .margin { /*Handles the style of the margin and its size*/
     background-color: peachpuff;
 }
 
-.button {
+.button { /*General buttons*/
     background-color: $secondary-color;
     border: 1px solid $secondary-color;
     color: white;
 }
 
-.highlight-box .button {
+.highlight-box .button { /*Highlight box buttons*/
     font-size: 0.85rem;
     display: inline-block;
     margin: 10px 10px;
@@ -143,6 +152,9 @@ header .margin { /*Handles the style of the margin and its size*/
 
 #message-info input {
     width: 100%;
+    background-color: white;
+    border: 2px solid $border-colors;
+    border-bottom: 0;
 }
 
 #message {
@@ -157,9 +169,51 @@ header .margin { /*Handles the style of the margin and its size*/
     font-weight: 600;
 }
 
+#call-to-action {
+    text-align: center;
+    padding-top: 15px;
+}
+
 /*Back To Top*/
 .back-to-top {
     text-align: center;
     font-size: 0.75rem;
     padding-bottom: 15px;
+}
+
+/*About Page*/
+#who-am-i {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid $border-colors;
+    padding: 10px 10px;
+}
+
+#my-desc {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+#about-further {
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+/*Coding Examples*/
+.meat-positioning div h1 { /*Temporary*/
+    text-align: center;
+}
+
+/*SCS Scheme*/
+#scs-scheme {
+    max-width: 100%;
+}
+
+#scs-scheme h3 {
+    font-size: 1.225rem;
+}
+
+#treehouse-link {
+    display: none;
 }

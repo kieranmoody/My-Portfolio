@@ -9,34 +9,30 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/icons.css">
 </head>
 <body>
     <header>
         <div class="header-positioning"> <!--Controlls the size of the header/the grid's proportions-->
             <div class="margin"> <!--Side section of the header, controls the positioning within the container (padding)-->
-                <a href="#" class="logo we-are-here">M</a> 
-                <div id="link-tree"> <!--Seperates the list from the logo-->
-                    <div id="site-map">
-                        <ul> <!--The linktree in the header corner-->
-                            <li><a href="#">About Me</a></li>
-                            <li><a href="#">My Portfolio</a></li>
-                            <li><a href="#">Coding Examples</a></li>
-                            <li><a href="#">SCS Scheme</a></li>
-                            <li><a href="#">Contact Me</a></li>
-                        </ul>
-                    </div>
-                    <div id="social-media"> <!--Social media's, split into 2 divs so that it can be split into a triangle (1 and 2)-->
-                        <div id="professional-socials">
-                            <div id="linkedin">
-                                <span></span>
-                            </div>
+                <div class="margin-flex">
+                    <a href="#" class="logo we-are-here">M</a> 
+                    <div class="link-tree"> <!--Seperates the list from the logo-->
+                        <div class="site-map">
+                            <ul> <!--The linktree in the header corner-->
+                                <li><a href="#">About Me</a></li>
+                                <li><a href="#">My Portfolio</a></li>
+                                <li><a href="#">Coding Examples</a></li>
+                                <li><a href="#">SCS Scheme</a></li>
+                                <li><a href="#">Contact Me</a></li>
+                            </ul>
                         </div>
-                        <div id="personal-socials">
-                            <div id="instagram">
-                                <span></span>
+                        <div class="social-media"> <!--Social media's, split into 2 divs so that it can be split into a triangle (1 and 2)-->
+                            <div>
+                                <span class="icon-github-square"></span>
                             </div>
-                            <div id="twitter">
-                                <span></span>
+                            <div>
+                                <span class="icon-linkedin-square"></span>
                             </div>
                         </div>
                     </div>
@@ -53,12 +49,13 @@
                             I am a Web Developer
                         </div>
                     </div>
-                    <div class="scroll-down">
+                    <div class="scroll-down"> <!--Link that takes you to the bottom of the page-->
                         <div>
                             Scroll Down
                         </div>
                         <div>
-                            <span id="down-arrow"></span>
+                            <span class="icon-keyboard_arrow_down">
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -100,7 +97,7 @@
                 </div>
             </div>
             <div id="site-foot"> <!--Positioning of the call-to-action-->
-                <div id="call-to-action">
+                <div id="call-to-action"> <!--The Text portion of the call-->
                     <div>
                         <h5>
                             Get in Touch
@@ -116,7 +113,7 @@
                 </div>
                 <div id="foot-buttons">
                     <div id="message-info"> <!--Controls the input options, with the children controlling layout-->
-                        <div id="contact-names">
+                        <div id="contact-names"> <!--Split into 3 sections as with wider screens they will be split-->
                             <input placeholder="*First Name..." class="row-one" id="first-name" name="input" type="text" value>
                             <input placeholder="*Last Name..." class="row-one" id="last-name" name="input" type="text" value>
                         </div>
@@ -140,7 +137,7 @@
     <footer>
         <div class="back-to-top"> <!--Controls the positioning of the back to top link-->
             <div>
-                <spam id="up-arrow"></spam>
+                <spam class="icon-keyboard_arrow_up"></spam>
             </div>
             <div>
                 Back to Top
