@@ -1,0 +1,161 @@
+@use "utilities/index" as *;
+
+@media (min-width: 500px) {
+    .header-positioning {
+        grid-template-columns: none;
+        grid-template-rows: 0.20fr 1fr;
+    }
+
+    .site-map ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        font-size: $default-text-size;
+    }
+
+    .logo {
+        width: auto;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+    }
+
+    header .margin,
+    header img      {
+        width: 100vw;
+    }
+
+    header .margin {
+        border: none;
+    }
+
+    .title-container {
+        padding: 10% 10px 2.5%;
+    }
+
+    .website-title h1 {
+        font-size: 2.3rem;
+    }
+
+    .website-title {
+        font-size: 1.5rem;
+    }
+
+    .scroll-down,
+    .back-to-top {
+        font-size: 1rem;
+    }
+
+    .website-head,
+    .website-head img,
+    .title-container     {
+        max-height: 35vh;
+    }
+
+    #treehouse-highlight img {
+        max-height:35vh;
+        display:flex;
+        justify-self: center;
+    }
+
+    #message {
+        padding-bottom: 25%;
+    }
+}
+
+@media (min-width: 750px) {
+    .title-container {
+        padding: 7.5% 10px 2.5%;
+    }
+
+    header .logo {
+        font-size: 2.375rem
+    }
+    header .social-media {
+        font-size: 2rem;
+    }
+    header .site-map ul {
+        font-size: 1.25rem;
+    }
+
+    .meat-positioning {
+        font-size: 1.5rem;
+    }
+
+    #scs-scheme h3,
+    #portfolio h1,
+    #examples h1,
+    #index h3,
+    #index h5 {
+        font-size: 2rem;
+    }
+
+    .highlight-box .button {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    .title-container {
+        padding: 5% 10px 2.5%;
+    }
+
+    #message {
+        padding-bottom: 15%;
+    }
+
+    #index {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .highlight-box img {
+        height: 35vh;
+    }
+}
+
+@media (min-width: 1500px) {
+    .title-container {
+        padding: 3.5% 10px 1.5%;
+    }
+    #message {
+        padding-bottom: 5%;
+    }
+}
+
+@media (min-width: 450px) {
+    #who-am-i {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 750px) {
+    #who-am-i {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (min-width: 750px) {
+    #intro-scion,
+    #treehouse-desc {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+@media (min-width: 1000px) {
+    #intro-scion,
+    #treehouse-desc {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media (min-width: 1500px) {
+    #intro-scion,
+    #treehouse-desc {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}

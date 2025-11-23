@@ -4,66 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/icons.css">
 </head>
 <body>
     <header>
-        <div id="margin">
-            <a href="#">M</a>
-            <div id="link-tree">
-                <div id="site-map">
-                    <ul>
-                        <li><a href="#">About Me</a></li>
-                        <li class="we-are-here"><a href="#">My Portfolio</a></li>
-                        <li><a href="#">Coding Examples</a></li>
-                        <li><a href="#">SCS Scheme</a></li>
-                        <li><a href="#">Contact Me</a></li>
-                    </ul>
-                </div>
-                <div id="social-media">
-                    <div id="professional-socials">
-                        <div id="linkedin">
-                            <span></span>
+        <div class="header-positioning">
+            <div class="margin">
+                <a href="#" class="logo">M</a>
+                <div class="link-tree">
+                    <div class="site-map">
+                        <ul>
+                            <li><a href="#">About Me</a></li>
+                            <li><a href="#" class="we-are-here">My Portfolio</a></li>
+                            <li><a href="#">Coding Examples</a></li>
+                            <li><a href="#">SCS Scheme</a></li>
+                            <li><a href="#">Contact Me</a></li>
+                        </ul>
+                    </div>
+                    <div class="social-media"> <!--Social media's, split into 2 divs so that it can be split into a triangle (1 and 2)-->
+                        <div>
+                            <span class="icon-github-square"></span>
+                        </div>
+                        <div>
+                            <span class="icon-linkedin-square"></span>
                         </div>
                     </div>
-                    <div id="personal-socials">
-                        <div id="instagram">
-                            <span></span>
+                </div>
+            </div>
+            <div class="website-head"> 
+                <img src="../images/title-background.jpg" class="title-image">
+                <div class="title-container"> <!--Contains the overlay- this is where the flex is--> <!--Controls the positioning within the container (padding, etc)-->
+                    <div class="website-title"> <!--How is the title framed-->
+                        <div>
+                            <h1>My Portfolio</h1>
                         </div>
-                        <div id="twitter">
-                            <span></span>
+                    </div>
+                    <div class="scroll-down"> <!--Link that takes you to the bottom of the page-->
+                        <div>
+                            Scroll Down
+                        </div>
+                        <div>
+                            <span class="icon-keyboard_arrow_down">
+                            </span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-            <div>
-                <img>
-                <div id="website-head">
-                    <div>
-                        My Portfolio
-                    </div>
-                    <div id="scroll-down">
-                        <div>
-                            Scroll Down
-                        </div>
-                        <div>
-                            <span id="down-arrow"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
     </header>
     <main>
-        <div class="meat-positioning">
+        <div class="meat-positioning" id="portfolio">
             <div>
                 <h1>Coming Soon</h1>
             </div>
         </div>
     </main>
     <footer>
-        <div>
+        <div class="back-to-top">
             <div>
-                <spam id="up-arrow"></spam>
+                <spam class="icon-keyboard_arrow_up"></spam>
             </div>
             <div>
                 Back to Top
