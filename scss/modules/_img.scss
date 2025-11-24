@@ -1,0 +1,29 @@
+@use "../utilities/index" as *;
+/*Images*/
+.title-image { /*Makes sure the title fills the container*/
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 1
+}
+    /*Sets the proportions of the images*/
+.highlight-box img { 
+    height: 20vh;
+    width: 100%;
+}
+    
+#who-am-i img { 
+    height: 25vh;
+    width: auto;
+     margin: 0 auto;
+}
+
+#treehouse-desc img {
+    max-height: 30vh;
+    width: auto;
+}
+
+#scs-scheme img {
+    padding-top: 5px;
+}

@@ -1,0 +1,26 @@
+@use "../utilities/index" as *;
+/*Buttons*/
+.button { /*General Buttons*/
+    background-color: $secondary-color;
+    border: 1px solid $secondary-color;
+    color: white;
+}
+
+.highlight-box .button { /*Highlight box buttons*/
+    font-size: 0.85rem;
+    display: inline-block;
+    margin: 10px 10px;
+    padding: 5px 10px;
+}
+
+#treehouse-collection .button {
+    width: 100%;
+}
+
+.button { /*Gives all buttons a pointer*/
+    cursor: pointer;
+}
+
+#submit-button button {
+    width: 100%;
+}

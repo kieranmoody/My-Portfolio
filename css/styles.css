@@ -363,33 +363,7 @@ html img { /*Makes sure no images go off screen or force scrollbars*/
   max-width: 100%;
 }
 
-.margin .we-are-here { /*Underlines the part of the margin representing the current page*/
-  text-decoration: underline;
-}
-
-header .margin { /*Handles the style of the margin and its size*/
-  border-right: 5px solid rgb(128, 128, 8);
-  height: fit-content;
-  width: 100%;
-  display: block;
-  text-align: center;
-  padding: 0 15px;
-  background-color: peachpuff;
-  font-size: 0.625rem;
-}
-
-.margin li { /*Controls what happens with the specific parts of the list*/
-  list-style: none;
-  padding: 5px 0;
-}
-
-.social-media {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  font-size: 1.5rem;
-}
-
+/*Index Title*/
 .header-positioning { /*Controls the header, and the proportions of the two sections*/
   display: grid;
   grid-template-columns: 0.2fr 1fr;
@@ -416,44 +390,10 @@ header .margin { /*Handles the style of the margin and its size*/
   height: 100%;
 }
 
-.scroll-down {
-  font-size: 0.75rem;
-}
-
-.website-title { /*Makes the title show vertically*/
-  display: flex;
-  flex-direction: column;
-}
-
-.logo { /*Sets the aethetics of the logo*/
-  display: block;
-  width: 100%;
-  padding: 10px 0;
-  font-size: 1.875rem;
-  font-weight: 600;
-}
-
-#highlight-collection h3 { /*Sets the positioning of the highlight heading*/
-  text-align: center;
-  padding-bottom: 10px;
-}
-
-.title-image { /*Makes sure the title fills the container*/
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-  position: relative;
-  z-index: 1;
-}
-
+/*Index Main Content*/
 .meat-positioning { /*Positioning of the main body of text, also a grid for later use*/
   padding: 15px;
   display: grid;
-}
-
-.highlight-box img { /*Sets the proportions of the image*/
-  height: 20vh;
-  width: 100%;
 }
 
 #highlights { /*The positioning of the highlights section*/
@@ -479,7 +419,7 @@ header .margin { /*Handles the style of the margin and its size*/
   margin-left: 5px;
 }
 
-/*Treehouse Index*/
+/*Index Treehouse*/
 #treehouse-collection { /*The entire section*/
   display: flex;
   flex-direction: column-reverse;
@@ -497,21 +437,8 @@ header .margin { /*Handles the style of the margin and its size*/
   background-color: peachpuff;
 }
 
-.button { /*General buttons*/
-  background-color: rgb(151, 2, 2);
-  border: 1px solid rgb(151, 2, 2);
-  color: white;
-}
-
-.highlight-box .button { /*Highlight box buttons*/
-  font-size: 0.85rem;
-  display: inline-block;
-  margin: 10px 10px;
-  padding: 5px 10px;
-}
-
-/*Contact Me*/
-#message-info input {
+/*Index Contact Me*/
+#message-info input { /*How I want my input bars to look*/
   width: 100%;
   background-color: white;
   border: 2px solid rgb(128, 128, 8);
@@ -520,10 +447,6 @@ header .margin { /*Handles the style of the margin and its size*/
 
 #message {
   padding-bottom: 50%;
-}
-
-#submit-button button {
-  width: 100%;
 }
 
 #my-details {
@@ -535,29 +458,12 @@ header .margin { /*Handles the style of the margin and its size*/
   padding-top: 15px;
 }
 
-#call-to-action h5 {
-  padding-bottom: 10px;
-}
-
-/*Back To Top*/
-.back-to-top {
-  text-align: center;
-  font-size: 0.75rem;
-  padding-bottom: 15px;
-}
-
 /*About Page*/
-#who-am-i {
+#who-am-i { /*The main descriptor*/
   display: flex;
   flex-direction: column;
   border: 2px solid rgb(128, 128, 8);
   padding: 10px 10px;
-}
-
-#who-am-i img {
-  height: 25vh;
-  width: auto;
-  margin: 0 auto;
 }
 
 #my-desc {
@@ -565,34 +471,16 @@ header .margin { /*Handles the style of the margin and its size*/
   padding: 0 5px 5px;
 }
 
-#about-further {
+#about-further { /*The secondary descriptor*/
   width: 100%;
   text-align: center;
   padding-top: 20px;
 }
 
-/*Coding Examples*/
-.meat-positioning div h1 { /*Temporary*/
-  text-align: center;
-}
-
-/*SCS Scheme*/
+/*SCS Scheme Page*/
 #scs-scheme {
   max-width: 100%;
   text-align: center;
-}
-
-#scs-scheme h3 {
-  font-size: 1.225rem;
-  padding: 10px 0;
-}
-
-#scs-scheme img {
-  padding-top: 5px;
-}
-
-#treehouse-link {
-  display: none;
 }
 
 #intro-scion,
@@ -608,13 +496,145 @@ header .margin { /*Handles the style of the margin and its size*/
   padding-right: 10px;
 }
 
+#netmatters-desc ul {
+  list-style-type: none;
+}
+
+/*Buttons*/
+.button { /*General Buttons*/
+  background-color: rgb(151, 2, 2);
+  border: 1px solid rgb(151, 2, 2);
+  color: white;
+}
+
+.highlight-box .button { /*Highlight box buttons*/
+  font-size: 0.85rem;
+  display: inline-block;
+  margin: 10px 10px;
+  padding: 5px 10px;
+}
+
+#treehouse-collection .button {
+  width: 100%;
+}
+
+.button { /*Gives all buttons a pointer*/
+  cursor: pointer;
+}
+
+#submit-button button {
+  width: 100%;
+}
+
+/*Images*/
+.title-image { /*Makes sure the title fills the container*/
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+/*Sets the proportions of the images*/
+.highlight-box img {
+  height: 20vh;
+  width: 100%;
+}
+
+#who-am-i img {
+  height: 25vh;
+  width: auto;
+  margin: 0 auto;
+}
+
 #treehouse-desc img {
   max-height: 30vh;
   width: auto;
 }
 
-#netmatters-desc ul {
-  list-style-type: none;
+#scs-scheme img {
+  padding-top: 5px;
+}
+
+/*Icon related*/
+.social-media { /*Positioning of the icons*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
+}
+
+/*Navigation Section*/
+.margin .we-are-here { /*Underlines the part of the margin representing the current page*/
+  text-decoration: underline;
+}
+
+header .margin { /*Handles the style of the margin and its size*/
+  border-right: 5px solid rgb(128, 128, 8);
+  height: fit-content;
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 0 15px;
+  background-color: peachpuff;
+  font-size: 0.625rem;
+}
+
+.margin li { /*Controls what happens with the specific parts of the list*/
+  list-style: none;
+  padding: 5px 0;
+}
+
+.logo { /*Sets the aethetics of the logo*/
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1.875rem;
+  font-weight: 600;
+}
+
+.scroll-down {
+  font-size: 0.75rem;
+}
+
+#my-details a:hover,
+.site-map a:hover,
+.logo:hover {
+  text-decoration: underline;
+}
+
+.back-to-top {
+  text-align: center;
+  font-size: 0.75rem;
+  padding-bottom: 15px;
+}
+
+#treehouse-link {
+  display: none;
+}
+
+/*Headings*/
+.website-title { /*Makes the title show vertically*/
+  display: flex;
+  flex-direction: column;
+}
+
+#highlight-collection h3 { /*Sets the positioning of the highlight heading*/
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#call-to-action h5 {
+  padding-bottom: 10px;
+}
+
+.meat-positioning div h1 { /*Temporary, for portfolio and coding examples*/
+  text-align: center;
+}
+
+#scs-scheme h3 {
+  font-size: 1.225rem;
+  padding: 10px 0;
 }
 
 @media (min-width: 500px) {
@@ -727,6 +747,15 @@ header .margin { /*Handles the style of the margin and its size*/
 @media (min-width: 750px) {
   #who-am-i {
     flex-direction: column-reverse;
+  }
+}
+@media (min-width: 500px) {
+  #treehouse-link {
+    display: block;
+  }
+  #treehouse-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
   }
 }
 @media (min-width: 750px) {
