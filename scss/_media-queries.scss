@@ -169,3 +169,23 @@
         padding-right: 100px;
     }
 }
+
+/*Coding Examples*/
+@media (min-width: 500px) {
+    #highlight-one-code h3 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    #highlight-one-images {
+        flex-direction: row;
+    }
+    #highlight-one-images #code-one-html {
+        width: 60%;
+        height: auto;
+    }
+    #highlight-one-images #code-one-scss {
+        width: 35%;
+    }
+}

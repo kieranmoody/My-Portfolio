@@ -500,6 +500,13 @@ html img { /*Makes sure no images go off screen or force scrollbars*/
   list-style-type: none;
 }
 
+/*Coding Examples Page*/
+#highlight-one-description {
+  border: 2px solid rgb(128, 128, 8);
+  padding: 5px;
+  text-align: center;
+}
+
 /*Buttons*/
 .button { /*General Buttons*/
   background-color: rgb(151, 2, 2);
@@ -512,6 +519,11 @@ html img { /*Makes sure no images go off screen or force scrollbars*/
   display: inline-block;
   margin: 10px 10px;
   padding: 5px 10px;
+}
+
+.highlight-buttons {
+  display: flex;
+  justify-content: space-between;
 }
 
 #treehouse-collection .button {
@@ -550,6 +562,28 @@ html img { /*Makes sure no images go off screen or force scrollbars*/
 #treehouse-desc img {
   max-height: 30vh;
   width: auto;
+}
+
+#highlight-one-images {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+#highlight-one-code img {
+  padding: 10px 5px;
+  width: 100%;
+}
+
+#code-one-html {
+  height: 35vh;
+}
+
+#code-one-scss {
+  height: 50vh;
 }
 
 #scs-scheme img {
@@ -635,6 +669,10 @@ header .margin { /*Handles the style of the margin and its size*/
 #scs-scheme h3 {
   font-size: 1.225rem;
   padding: 10px 0;
+}
+
+#highlight-one-code h3 {
+  text-align: center;
 }
 
 @media (min-width: 500px) {
@@ -777,6 +815,24 @@ header .margin { /*Handles the style of the margin and its size*/
   #treehouse-desc {
     padding-left: 100px;
     padding-right: 100px;
+  }
+}
+/*Coding Examples*/
+@media (min-width: 500px) {
+  #highlight-one-code h3 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 1000px) {
+  #highlight-one-images {
+    flex-direction: row;
+  }
+  #highlight-one-images #code-one-html {
+    width: 60%;
+    height: auto;
+  }
+  #highlight-one-images #code-one-scss {
+    width: 35%;
   }
 }
 

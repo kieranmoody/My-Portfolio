@@ -13,6 +13,11 @@
     padding: 5px 10px;
 }
 
+.highlight-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
 #treehouse-collection .button {
     width: 100%;
 }

@@ -24,6 +24,28 @@
     width: auto;
 }
 
+#highlight-one-images {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+#highlight-one-code img {
+    padding: 10px 5px;
+    width: 100%;
+}
+
+#code-one-html {
+    height: 35vh;
+}
+
+#code-one-scss {
+    height: 50vh;
+}
+
 #scs-scheme img {
     padding-top: 5px;
 }
