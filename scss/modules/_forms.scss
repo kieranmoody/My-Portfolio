@@ -1,0 +1,36 @@
+/*Index Contact Me*/
+@use "../utilities/index" as *;
+
+#message-info input {   /*How I want my input bars to look*/
+    width: 100%;
+    background-color: white;
+    border: 2px solid $border-colors;
+    border-bottom: 0;
+}
+
+#message {
+    padding-bottom: 50%;
+}
+
+#my-details {
+    font-weight: 600;
+}
+
+#call-to-action {
+    text-align: center;
+    padding-top: 15px;
+}
+
+#foot-buttons {
+    display: none;
+}
+.js-enabled #foot-buttons {
+    display: block;
+}
+
+#reference-form {
+    display: none
+}
+.js-enabled #reference-form {
+    display: contents;
+}

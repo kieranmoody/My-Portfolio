@@ -10,15 +10,47 @@
     <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/hamburgers.min.css">
+    <link rel="stylesheet" href="js/plugins/jAlert/jAlert.min.css">
 </head>
 <body>
     <header>
         <div class="header-positioning"> <!--Controlls the size of the header/the grid's proportions-->
             <div class="margin"> <!--Side section of the header, controls the positioning within the container (padding)-->
                 <div class="margin-flex">
-                    <a href="#index" class="logo we-are-here">M</a> 
+                    <div class="burger-positioning">
+                        <a href="#index" class="logo we-are-here">M</a> 
+                        <div class="hamburger hamburger--spin">
+                            <div class="hamburger-box">
+                                <div class="hamburger-inner"></div>
+                            </div>
+                        </div>
+                        <div class="pull-out-menu">
+                            <div class="site-map">
+                                <ul>
+                                    <div class="pull-out-grid">
+                                        <li><a href="html/about.html">About Me</a></li>
+                                        <li><a href="html/portfolio.html">My Portfolio</a></li>
+                                        <li><a href="html/examples.html">Coding Examples</a></li>
+                                        <li><a href="html/scs-scheme.html">SCS Scheme</a></li>
+                                    </div>
+                                    <div class="pull-out-contact">
+                                        <li><a href="#site-foot">Contact Me</a></li>
+                                    </div>
+                                </ul>
+                            </div>
+                            <div class="social-media">
+                                <div>
+                                    <a href="https://github.com/kieranmoody" target="_blank"><span class="icon-github-square"></span></a>
+                                </div>
+                                <div>
+                                    <a href="https://www.linkedin.com/in/kieran-moody-805817242/" target="_blank"><span class="icon-linkedin-square"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
                     <div class="link-tree"> <!--Seperates the list from the logo-->
-                        <div class="site-map">
+                        <div class="site-map js-disabled">
                             <ul> <!--The linktree in the header corner-->
                                 <li><a href="html/about.html">About Me</a></li>
                                 <li><a href="html/portfolio.html">My Portfolio</a></li>
@@ -26,8 +58,9 @@
                                 <li><a href="html/scs-scheme.html">SCS Scheme</a></li>
                                 <li><a href="#site-foot">Contact Me</a></li>
                             </ul>
+
                         </div>
-                        <div class="social-media"> <!--Social media's, split into 2 divs so that it can be split into a triangle (1 and 2)-->
+                        <div class="social-media js-disabled"> <!--Social media's, split into 2 divs so that it can be split into a triangle (1 and 2)-->
                             <div>
                                 <a href="https://github.com/kieranmoody" target="_blank"><span class="icon-github-square"></span></a>
                             </div>
@@ -43,7 +76,7 @@
                 <div class="title-container"> <!--Contains the overlay- this is where the flex is--> <!--Controls the positioning within the container (padding, etc)-->
                     <div class="website-title"> <!--How is the title framed-->
                         <div>
-                            <h1>My Name is Kieran Moody</h1>
+                            <h1 class="title-animate">My Name is Kieran Moody</h1>
                         </div>
                         <div>
                             I am a Web Developer
@@ -69,26 +102,30 @@
                 <div id="highlight-collection"> <!--Groups the highlight section (including the heading)-->
                     <h3>Highlights</h3>
                     <div id="highlights"> <!--Controls the positioning of both highlights as a group-->
-                        <div class="highlight-box" id="highlight-one"> <!--Groups Highlight One together-->
+                        <div class="highlight-box zoomable-box" id="highlight-one"> <!--Groups Highlight One together-->
                             <img src="images/highlight-one-netmatters.png" alt="An image of my copy of the netmatters website">
-                            <div class="highlight-paragraph">
-                                <p>This is an image that shows the Netmatters website that I made, which is a copy of a version I was given. It is the first large-scale project I have completed and thus contains mistakes and flawed methodology. However I find it acts as a good indicator of my ability to learn and grow from my own mistakes.</p>
-                            </div>
-                            <div class="highlight-buttons">
-                                <a href="https://netmatters.kieran-moody.netmatters-scs.co.uk" target="_blank"><button class="button">View Here</button></a>
-                                <a href="html/examples.html#highlight-one-code"><button class="button">Read More</button></a>
+                            <div class="highlight-box-inner">
+                                <div class="highlight-paragraph">
+                                    <p>This is an image that shows the Netmatters website that I made, which is a copy of a version I was given. It is the first large-scale project I have completed and thus contains mistakes and flawed methodology. However I find it acts as a good indicator of my ability to learn and grow from my own mistakes.</p>
+                                </div>
+                                <div class="highlight-buttons">
+                                    <a href="https://netmatters.kieran-moody.netmatters-scs.co.uk" target="_blank"><button class="button">View Here</button></a>
+                                    <a href="html/examples.html#highlight-one-code"><button class="button">Read More</button></a>
+                                </div>
                             </div>
                         </div>
-                        <div class="highlight-box" id="highlight-two"> <!--Groups Highlight Two together-->
+                        <div class="highlight-box  zoomable-box" id="highlight-two"> <!--Groups Highlight Two together-->
                             <img src="images/under-construction-temp-two.webp" alt="Under construction, no highlight to see">
-                            <div class="highlight-paragraph">
-                                <p>No available highlights yet, coming soon!</p>
+                            <div class="highlight-box-inner">
+                                <div class="highlight-paragraph">
+                                    <p>No available highlights yet, coming soon!</p>
+                                </div>
+                                <a href="#"><button class="button">Read More</button></a>
                             </div>
-                            <a href="#"><button class="button">READ MORE</button></a>
                         </div>
                     </div>
                 </div>
-                <div id="treehouse-collection"> <!--Controls the positioning of both highlights as a group-->
+                <div id="treehouse-collection" class="zoomable-box"> <!--Controls the positioning of both highlights as a group-->
                     <a href="html/scs-scheme.html#treehouse-desc"><button class="button">Learn More!</button></a>
                     <div id="treehouse-info"> <!--Groups the treehouse information-->
                         <p>I regularly use Treehouse to improve my skills, and have so far amassed a score of 2,472, with the majority of my work being focused on web-development.</p>
@@ -106,33 +143,34 @@
                         </h5>
                     </div>
                     <div>
-                        <p>Feel free to contact me using the in-site method below! Alternatively, reach out via my phone number and email address below. I look forward to hearing from you!</p>
+                        <p id="reference-form">Feel free to contact me using the in-site method below! Alternatively - </p>
+                        <p>Reach out via my phone number and email address below. I look forward to hearing from you!</p>
                     </div>
                     <div id="my-details">
                         <p>07969 852266</p>
                         <a href="mailto:kieranmoody127@gmail.com">kieranmoody127@gmail.com</a>
                     </div>
                 </div>
-                <div id="foot-buttons">
+                <form method="GET" id="foot-buttons" onsubmit="return validateForm()" novalidate>
                     <div id="message-info"> <!--Controls the input options, with the children controlling layout-->
                         <div id="contact-names"> <!--Split into 3 sections as with wider screens they will be split-->
-                            <input placeholder="*First Name..." class="row-one" id="first-name" name="input" type="text" value>
-                            <input placeholder="*Last Name..." class="row-one" id="last-name" name="input" type="text" value>
+                            <input placeholder="*First Name..." class="row-one" id="first-name" name="input" type="name" maxlength="50" value>
+                            <input placeholder="*Last Name..." class="row-one" id="last-name" name="input" type="name" maxlength="50" value>
                         </div>
                         <div>
                             <div>
-                                <input placeholder="*Email Address..." class="row-two" id="email-address" name="input" type="text" value>
-                                <input placeholder="Subject..." class="row-two" id="subject" name="input" type="text" value>
+                                <input placeholder="*Email Address..." class="row-two" id="email-address" name="email" type="email" maxlength="128" value>
+                                <input placeholder="Subject..." class="row-two" id="subject" name="subject" type="text" maxlength="128" value>
                             </div>
                             <div>
-                                <input placeholder="*Message..." id="message" name="input" type="text" value>
+                                <input placeholder="*Message..." id="message" name="message" type="text" value>
                             </div>
                         </div>
                     </div>
                     <div id="submit-button">
-                        <a href="#"><button class="button">Submit</button></a>
+                        <button type="submit" aria-label="submit" class="button">Submit</button>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </main>
@@ -147,5 +185,13 @@
         </div>
         </a>
     </footer>
+    <!--JS Links-->
+    <script src="js/plugins/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <script src="js/plugins/jAlert/jAlert.min.js"></script>
+    <script src="js/plugins/jAlert/jAlert-functions.min.js"></script>
+    <script src="js\plugins/jAlert/jAlert.css.min.js"></script>
+    <script type="text/javascript" src="js/plugins/slick/slick.min.js"></script>
+    <script src="js/images.js"></script>
 </body>
 </html>

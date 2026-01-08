@@ -6,13 +6,14 @@
 
 header .margin { /*Handles the style of the margin and its size*/
     border-right: 5px solid $border-colors;
-    height: fit-content;
+    height: 100%;
     width: 100%;
     display: block;
     text-align: center;
     padding: 0 15px;
     background-color: $alternative-background;
     font-size: 0.625rem;
+    z-index: 99999;
 }
 
 .margin li { /*Controls what happens with the specific parts of the list*/
@@ -26,6 +27,10 @@ header .margin { /*Handles the style of the margin and its size*/
     padding: 10px 0;
     font-size: 1.875rem;
     font-weight: 600;
+}
+
+.js-enabled header .logo {
+    font-size: 3.5rem;
 }
 
 .scroll-down {
@@ -46,4 +51,12 @@ header .margin { /*Handles the style of the margin and its size*/
 
 #treehouse-link {
     display: none;
+}
+
+header .burger-positioning .hamburger {
+    display: none;
+}
+
+.js-enabled header .hamburger {
+    display: inline-block;
 }

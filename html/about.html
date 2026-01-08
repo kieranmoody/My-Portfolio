@@ -9,28 +9,63 @@
     <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/icons.css">
+    <link rel="stylesheet" href="../css/hamburgers.min.css">
+    <link rel="stylesheet" href="../js/plugins/jAlert/jAlert.min.css">
 </head>
 <body>
     <header>
-        <div class="header-positioning">
-            <div class="margin">
-                <a href="../index.html" class="logo">M</a>
-                <div class="link-tree">
-                    <div class="site-map">
-                        <ul>
-                            <li class="we-are-here"><a href="#about">About Me</a></li>
-                            <li><a href="portfolio.html">My Portfolio</a></li>
-                            <li><a href="examples.html">Coding Examples</a></li>
-                            <li><a href="scs-scheme.html">SCS Scheme</a></li>
-                            <li><a href="../index.html#site-foot">Contact Me</a></li>
-                        </ul>
-                    </div>
-                    <div class="social-media"> <!--Social media's, split into 2 divs so that it can be split into a triangle (1 and 2)-->
-                        <div>
-                            <a href="https://github.com/kieranmoody" target="_blank"><span class="icon-github-square"></span></a>
+        <div class="header-positioning"> <!--Controlls the size of the header/the grid's proportions-->
+            <div class="margin"> <!--Side section of the header, controls the positioning within the container (padding)-->
+                <div class="margin-flex">
+                    <div class="burger-positioning">
+                        <a href="../index.html" class="logo">M</a> 
+                        <div class="hamburger hamburger--spin">
+                            <div class="hamburger-box">
+                                <div class="hamburger-inner"></div>
+                            </div>
                         </div>
-                        <div>
-                            <a href="https://www.linkedin.com/in/kieran-moody-805817242/" target="_blank"><span class="icon-linkedin-square"></span></a>
+                        <div class="pull-out-menu">
+                            <div class="site-map">
+                                <ul>
+                                    <div class="pull-out-grid">
+                                        <li><a href="about.html" class="we-are-here">About Me</a></li>
+                                        <li><a href="portfolio.html">My Portfolio</a></li>
+                                        <li><a href="examples.html">Coding Examples</a></li>
+                                        <li><a href="scs-scheme.html">SCS Scheme</a></li>
+                                    </div>
+                                    <div class="pull-out-contact">
+                                        <li><a href="../index.html#site-foot">Contact Me</a></li>
+                                    </div>
+                                </ul>
+                            </div>
+                            <div class="social-media">
+                                <div>
+                                    <a href="https://github.com/kieranmoody" target="_blank"><span class="icon-github-square"></span></a>
+                                </div>
+                                <div>
+                                    <a href="https://www.linkedin.com/in/kieran-moody-805817242/" target="_blank"><span class="icon-linkedin-square"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="link-tree"> <!--Seperates the list from the logo-->
+                        <div class="site-map js-disabled">
+                            <ul> <!--The linktree in the header corner-->
+                                <li><a href="about.html" class="we-are-here">About Me</a></li>
+                                <li><a href="portfolio.html">My Portfolio</a></li>
+                                <li><a href="examples.html">Coding Examples</a></li>
+                                <li><a href="scs-scheme.html">SCS Scheme</a></li>
+                                <li><a href="../index.html#site-foot">Contact Me</a></li>
+                            </ul>
+
+                        </div>
+                        <div class="social-media js-disabled"> <!--Social media's, split into 2 divs so that it can be split into a triangle (1 and 2)-->
+                            <div>
+                                <a href="https://github.com/kieranmoody" target="_blank"><span class="icon-github-square"></span></a>
+                            </div>
+                            <div>
+                                <a href="https://www.linkedin.com/in/kieran-moody-805817242/" target="_blank"><span class="icon-linkedin-square"></span></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -40,7 +75,7 @@
                 <div class="title-container"> <!--Contains the overlay- this is where the flex is--> <!--Controls the positioning within the container (padding, etc)-->
                     <div class="website-title"> <!--How is the title framed-->
                         <div>
-                            <h1>More About Me</h1>
+                            <h1 class="title-animate">More About Me</h1>
                         </div>
                     </div>
                     <a href="#about"><div class="scroll-down"> <!--Link that takes you to the bottom of the page-->
@@ -81,5 +116,12 @@
         </div>
         </a>
     </footer>
+    <script src="../js/plugins/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <script src="../js/plugins/jAlert/jAlert.min.js"></script>
+    <script src="../js/plugins/jAlert/jAlert-functions.min.js"></script>
+    <script src="../js\plugins/jAlert/jAlert.css.min.js"></script>
+    <script type="text/javascript" src="../js/plugins/slick/slick.min.js"></script>
+    <script src="../js/images.js"></script>
 </body>
 </html>

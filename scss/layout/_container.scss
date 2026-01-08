@@ -7,7 +7,7 @@
     grid-template-columns: 0.20fr 1fr;
     width: 100%;
     border-bottom: 5px solid $border-colors;
-    justify-content: center;
+
 }
 
 .website-head {
@@ -20,12 +20,51 @@
     text-align: center;
     justify-content: space-between;
     min-width: 0;
-    padding: 25% 10px 10%;
+    padding: 15% 10px 5%;
     z-index: 2;
     position: absolute;
     top: 0;
     width: 100%;
     height: 100%;
+}
+
+.pull-out-menu {
+    display: none;
+    background-color: $alternative-background;
+    width: 100%;
+    overflow-x:hidden;
+
+}
+
+.pull-out-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    z-index: 1000;
+}
+
+.js-enabled .js-disabled{
+    display: none;
+}
+
+.js-enabled .margin {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-right: 0;
+    
+}
+
+.js-enabled .header-positioning {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.20fr 1fr;
+}
+
+.pull-out-grid, 
+.pull-out-contact {
+    width: 100%;
 }
 
 /*Index Main Content*/
@@ -38,24 +77,28 @@
 #highlights { /*The positioning of the highlights section*/
     display: flex;
     padding-bottom: 10px;
-}
-
-.highlight-box { /*The positioning of each highlight box*/
-    width: 50%;
-    height:fit-content;
+    gap: 10px;
 }
 
 .highlight-paragraph {
     width:fit-content;
     padding: 0 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-#highlight-one {
-    margin-right: 5px;
+
+.highlight-box-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
 }
 
-#highlight-two {
-    margin-left: 5px;
+.highlight-box {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
     /*Index Treehouse*/
@@ -74,28 +117,6 @@
 #treehouse-collection {
     border: 2px solid $border-colors;
     background-color: $alternative-background;
-}
-
-    /*Index Contact Me*/
-
-#message-info input {   /*How I want my input bars to look*/
-    width: 100%;
-    background-color: white;
-    border: 2px solid $border-colors;
-    border-bottom: 0;
-}
-
-#message {
-    padding-bottom: 50%;
-}
-
-#my-details {
-    font-weight: 600;
-}
-
-#call-to-action {
-    text-align: center;
-    padding-top: 15px;
 }
 
 /*About Page*/
@@ -146,3 +167,32 @@
     padding: 5px;
     text-align: center;
 }
+
+/*Portfolio*/
+#carousel-positioning {
+  min-width: 0;
+  padding: 15px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: $border-colors;
+}
+
+.slide-text {
+    text-align: center;
+}
+
+.slick-list {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.carousel-disabled {
+    width: 75%;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+

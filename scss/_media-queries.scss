@@ -1,5 +1,14 @@
 @use "utilities/index" as *;
 
+@media (max-width: 499px) {
+    .title-container {
+        padding: 10% 10px 2.5%;
+    }
+    .title-animate {
+        margin: 0.5em 0;
+    }
+}
+
 @media (min-width: 500px) {
     .header-positioning {
         grid-template-columns: none;
@@ -9,7 +18,7 @@
     .site-map ul {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-wrap: wrap;
         font-size: $default-text-size;
     }
@@ -23,7 +32,7 @@
 
     header .margin,
     header img      {
-        width: 100vw;
+        width: 100%;
     }
 
     header .margin {
@@ -189,3 +198,35 @@
         width: 35%;
     }
 }
+
+//Portfolio Media Queries
+@media (min-width: 800px) {
+    .js-enabled .your-class .slick-slide {
+        margin: 0 10px; /* gap size */
+    }
+    .carousel-disabled {
+        width: 35%;
+        justify-content: space-around;
+    }
+    .no-js .your-class {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .no-js .carousel-disabled {
+        width: calc(50% - 20px);
+        margin: 0;
+    }
+}
+
+/* Bug Fixes*/
+
+/* Puts a red outline over every container so overlapping is visable (For bugfixing*/
+
+/* * {
+    pointer-events: auto !important;
+    background: rgba(255,0,0,0.1) !important;
+} */
+ 

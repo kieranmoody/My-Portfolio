@@ -49,3 +49,20 @@
 #scs-scheme img {
     padding-top: 5px;
 }
+
+/*Portfolio Images*/
+.your-class img {
+    height: 30vh;
+    padding-bottom: 5px;
+}
+
+/*Image Zoom Feature*/
+.ja_wrap_black:hover {
+    cursor: pointer;
+}
+.ja_body:hover {
+    cursor: default;
+}
+.js-enabled .closejAlert {
+    display: none;
+}
