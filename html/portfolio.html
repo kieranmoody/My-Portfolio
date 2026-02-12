@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <!--Links Roboto and Poppins-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../lightbulb.png">
+    <link rel="stylesheet" href="../js/plugins/Bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../js/plugins/jAlert/jAlert.min.css">
     <link rel="stylesheet" type="text/css" href="../js/plugins/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="../js/plugins/slick/slick-theme.css"/>
@@ -17,135 +20,98 @@
 </head>
 <body>
     <header>
-        <div class="header-positioning"> <!--Controlls the size of the header/the grid's proportions-->
-            <div class="margin"> <!--Side section of the header, controls the positioning within the container (padding)-->
-                <div class="margin-flex">
-                    <div class="burger-positioning">
-                        <a href="../index.html" class="logo">M</a> 
-                        <div class="hamburger hamburger--spin">
-                            <div class="hamburger-box">
-                                <div class="hamburger-inner"></div>
-                            </div>
-                        </div>
-                        <div class="pull-out-menu">
-                            <div class="site-map">
-                                <ul>
-                                    <div class="pull-out-grid">
-                                        <li><a href="about.html">About Me</a></li>
-                                        <li><a href="portfolio.html" class="we-are-here">My Portfolio</a></li>
-                                        <li><a href="examples.html">Coding Examples</a></li>
-                                        <li><a href="scs-scheme.html">SCS Scheme</a></li>
-                                    </div>
-                                    <div class="pull-out-contact">
-                                        <li><a href="../index.html#site-foot">Contact Me</a></li>
-                                    </div>
-                                </ul>
-                            </div>
-                            <div class="social-media">
-                                <div>
-                                    <a href="https://github.com/kieranmoody" target="_blank"><span class="icon-github-square"></span></a>
-                                </div>
-                                <div>
-                                    <a href="https://www.linkedin.com/in/kieran-moody-805817242/" target="_blank"><span class="icon-linkedin-square"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> 
-                    <div class="link-tree"> <!--Seperates the list from the logo-->
-                        <div class="site-map js-disabled">
-                            <ul> <!--The linktree in the header corner-->
-                                <li><a href="about.html">About Me</a></li>
-                                <li><a href="portfolio.html" class="we-are-here">My Portfolio</a></li>
-                                <li><a href="examples.html">Coding Examples</a></li>
-                                <li><a href="scs-scheme.html">SCS Scheme</a></li>
-                                <li><a href="../index.html#site-foot">Contact Me</a></li>
-                            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                        </div>
-                        <div class="social-media js-disabled"> <!--Social media's, split into 2 divs so that it can be split into a triangle (1 and 2)-->
-                            <div>
-                                <a href="https://github.com/kieranmoody" target="_blank"><span class="icon-github-square"></span></a>
-                            </div>
-                            <div>
-                                <a href="https://www.linkedin.com/in/kieran-moody-805817242/" target="_blank"><span class="icon-linkedin-square"></span></a>
-                            </div>
-                        </div>
+                <div class="collapse navbar-collapse" id="mainNav">
+
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link navbar-brand" href="../index.html">M</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="portfolio.html">My Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="examples.html">Coding Examples</a></li>
+                        <li class="nav-item"><a class="nav-link" href="scs-scheme.html">SCS Scheme</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../index.html#site-foot">Contact</a></li>
+                    </ul>
+
+                    <div class="d-flex gap-3 social-media">
+                        <a href="https://github.com/kieranmoody" class="text-white">
+                            <span class="icon-github-square"></span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/kieran-moody-805817242" class="text-white">
+                            <span class="icon-linkedin-square"></span>
+                        </a>
                     </div>
+
                 </div>
             </div>
-            <div class="website-head"> 
-                <img src="../images/title-background.jpg" class="title-image">
-                <div class="title-container"> <!--Contains the overlay- this is where the flex is--> <!--Controls the positioning within the container (padding, etc)-->
-                    <div class="website-title"> <!--How is the title framed-->
-                        <div>
-                            <h1 class="title-animate">My Portfolio</h1>
-                        </div>
-                    </div>
-                    <a href="#portfolio"><div class="scroll-down"> <!--Link that takes you to the bottom of the page-->
-                        <div>
-                            Scroll Down
-                        </div>
-                        <div>
-                            <span class="icon-keyboard_arrow_down">
-                            </span>
-                        </div>
-                    </div>
-                    </a>
-                </div>
-            </div>
-        </div>
+        </nav>
     </header>
+    
+    <section class="bg-dark text-white text-center py-5 position-relative">
+            <img src="../images/title-background.jpg" class="position-absolute w-100 h-100 top-0 start-0 object-fit-cover opacity-50 title-image">
+
+            <div class="container position-relative">
+                <h1 class="display-4 text-white title-animate">This is my portfolio</h1>
+                <p class="lead text-white mb-5">Check out my work</p>
+                <a href="#portfolio" class="btn btn-outline-secondary btn-hover">Scroll Down 
+                    <br>
+                    <span class="icon-keyboard_arrow_down"></span>
+                </a>
+            </div>
+            </div>
+    </section>
+
     <main>
-        <div class="meat-positioning" id="portfolio">
-            <div id="carousel-positioning">
-                <div class="carousel-wrapper">
-                    <div class="your-class">
-                        <div class="carousel-disabled zoomable-box">
-                            <img src="../images/highlight-one-netmatters.png">
-                            <div class="slide-text">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sem risus, viverra nec convallis nec, fringilla mattis erat. Nulla lorem nisi, aliquet in magna nec, condimentum rhoncus ex. Mauris ac tincidunt arcu, et bibendum augue. Mauris varius ornare semper. Fusce viverra lacus ligula, finibus vehicula ex aliquam non. Fusce non arcu arcu. Integer ac tempus eros, ullamcorper dictum mauris. Proin ultricies vulputate leo nec imperdiet. Integer aliquet scelerisque tincidunt.</p>
-                                <br>
-                                <p>Nam felis turpis, sollicitudin et massa nec, rhoncus volutpat diam. Aliquam erat volutpat. Suspendisse tempus ipsum quis nisi hendrerit, sed posuere dui cursus. Aenean luctus quam risus, in convallis enim lacinia quis. Sed lacinia vestibulum nisi non luctus. Curabitur auctor metus sapien. Morbi eu ipsum eget urna convallis faucibus. Integer aliquam nunc in justo venenatis dignissim. Praesent scelerisque euismod libero sed ullamcorper. Cras tincidunt dapibus odio sit amet cursus. Phasellus quis tristique dolor. Suspendisse potenti. Nunc sed facilisis justo. Nullam gravida id est ac tempus.</p>
-                            </div>
+        <div class="py-5" id="portfolio">
+            <div id="container">
+                <div class="your-class">
+                    <div class="carousel-disabled zoomable-box">
+                        <img src="../images/highlight-one-netmatters.png">
+                        <div class="slide-text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sem risus, viverra nec convallis nec, fringilla mattis erat. Nulla lorem nisi, aliquet in magna nec, condimentum rhoncus ex. Mauris ac tincidunt arcu, et bibendum augue. Mauris varius ornare semper. Fusce viverra lacus ligula, finibus vehicula ex aliquam non. Fusce non arcu arcu. Integer ac tempus eros, ullamcorper dictum mauris. Proin ultricies vulputate leo nec imperdiet. Integer aliquet scelerisque tincidunt.</p>
+                            <br>
+                            <p>Nam felis turpis, sollicitudin et massa nec, rhoncus volutpat diam. Aliquam erat volutpat. Suspendisse tempus ipsum quis nisi hendrerit, sed posuere dui cursus. Aenean luctus quam risus, in convallis enim lacinia quis. Sed lacinia vestibulum nisi non luctus. Curabitur auctor metus sapien. Morbi eu ipsum eget urna convallis faucibus. Integer aliquam nunc in justo venenatis dignissim. Praesent scelerisque euismod libero sed ullamcorper. Cras tincidunt dapibus odio sit amet cursus. Phasellus quis tristique dolor. Suspendisse potenti. Nunc sed facilisis justo. Nullam gravida id est ac tempus.</p>
                         </div>
-                        <div class="carousel-disabled zoomable-box">
-                            <img src="../images/under-construction-temp-two.webp">
-                            <div class="slide-text">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sem risus, viverra nec convallis nec, fringilla mattis erat. Nulla lorem nisi, aliquet in magna nec, condimentum rhoncus ex. Mauris ac tincidunt arcu, et bibendum augue. Mauris varius ornare semper. Fusce viverra lacus ligula, finibus vehicula ex aliquam non. Fusce non arcu arcu. Integer ac tempus eros, ullamcorper dictum mauris. Proin ultricies vulputate leo nec imperdiet. Integer aliquet scelerisque tincidunt.</p>
-                                <br>
-                                <p>Nam felis turpis, sollicitudin et massa nec, rhoncus volutpat diam. Aliquam erat volutpat. Suspendisse tempus ipsum quis nisi hendrerit, sed posuere dui cursus. Aenean luctus quam risus, in convallis enim lacinia quis. Sed lacinia vestibulum nisi non luctus. Curabitur auctor metus sapien. Morbi eu ipsum eget urna convallis faucibus. Integer aliquam nunc in justo venenatis dignissim. Praesent scelerisque euismod libero sed ullamcorper. Cras tincidunt dapibus odio sit amet cursus. Phasellus quis tristique dolor. Suspendisse potenti. Nunc sed facilisis justo. Nullam gravida id est ac tempus.</p>
-                            </div>
+                    </div>
+                    <div class="carousel-disabled zoomable-box">
+                        <img src="../images/under-construction-temp-two.webp">
+                        <div class="slide-text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sem risus, viverra nec convallis nec, fringilla mattis erat. Nulla lorem nisi, aliquet in magna nec, condimentum rhoncus ex. Mauris ac tincidunt arcu, et bibendum augue. Mauris varius ornare semper. Fusce viverra lacus ligula, finibus vehicula ex aliquam non. Fusce non arcu arcu. Integer ac tempus eros, ullamcorper dictum mauris. Proin ultricies vulputate leo nec imperdiet. Integer aliquet scelerisque tincidunt.</p>
+                            <br>
+                            <p>Nam felis turpis, sollicitudin et massa nec, rhoncus volutpat diam. Aliquam erat volutpat. Suspendisse tempus ipsum quis nisi hendrerit, sed posuere dui cursus. Aenean luctus quam risus, in convallis enim lacinia quis. Sed lacinia vestibulum nisi non luctus. Curabitur auctor metus sapien. Morbi eu ipsum eget urna convallis faucibus. Integer aliquam nunc in justo venenatis dignissim. Praesent scelerisque euismod libero sed ullamcorper. Cras tincidunt dapibus odio sit amet cursus. Phasellus quis tristique dolor. Suspendisse potenti. Nunc sed facilisis justo. Nullam gravida id est ac tempus.</p>
                         </div>
-                        <div class="carousel-disabled zoomable-box">
-                            <img src="../images/under-construction-temp-one.jpg">
-                            <div class="slide-text">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sem risus, viverra nec convallis nec, fringilla mattis erat. Nulla lorem nisi, aliquet in magna nec, condimentum rhoncus ex. Mauris ac tincidunt arcu, et bibendum augue. Mauris varius ornare semper. Fusce viverra lacus ligula, finibus vehicula ex aliquam non. Fusce non arcu arcu. Integer ac tempus eros, ullamcorper dictum mauris. Proin ultricies vulputate leo nec imperdiet. Integer aliquet scelerisque tincidunt.</p>
-                                <br>
-                                <p>Nam felis turpis, sollicitudin et massa nec, rhoncus volutpat diam. Aliquam erat volutpat. Suspendisse tempus ipsum quis nisi hendrerit, sed posuere dui cursus. Aenean luctus quam risus, in convallis enim lacinia quis. Sed lacinia vestibulum nisi non luctus. Curabitur auctor metus sapien. Morbi eu ipsum eget urna convallis faucibus. Integer aliquam nunc in justo venenatis dignissim. Praesent scelerisque euismod libero sed ullamcorper. Cras tincidunt dapibus odio sit amet cursus. Phasellus quis tristique dolor. Suspendisse potenti. Nunc sed facilisis justo. Nullam gravida id est ac tempus.</p>
-                            </div>
+                    </div>
+                    <div class="carousel-disabled zoomable-box">
+                        <img src="../images/under-construction-temp-one.jpg">
+                        <div class="slide-text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sem risus, viverra nec convallis nec, fringilla mattis erat. Nulla lorem nisi, aliquet in magna nec, condimentum rhoncus ex. Mauris ac tincidunt arcu, et bibendum augue. Mauris varius ornare semper. Fusce viverra lacus ligula, finibus vehicula ex aliquam non. Fusce non arcu arcu. Integer ac tempus eros, ullamcorper dictum mauris. Proin ultricies vulputate leo nec imperdiet. Integer aliquet scelerisque tincidunt.</p>
+                            <br>
+                            <p>Nam felis turpis, sollicitudin et massa nec, rhoncus volutpat diam. Aliquam erat volutpat. Suspendisse tempus ipsum quis nisi hendrerit, sed posuere dui cursus. Aenean luctus quam risus, in convallis enim lacinia quis. Sed lacinia vestibulum nisi non luctus. Curabitur auctor metus sapien. Morbi eu ipsum eget urna convallis faucibus. Integer aliquam nunc in justo venenatis dignissim. Praesent scelerisque euismod libero sed ullamcorper. Cras tincidunt dapibus odio sit amet cursus. Phasellus quis tristique dolor. Suspendisse potenti. Nunc sed facilisis justo. Nullam gravida id est ac tempus.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-    <footer>
-        <a href="#"><div class="back-to-top">
-            <div>
-                <spam class="icon-keyboard_arrow_up"></spam>
-            </div>
-            <div>
-                Back to Top
-            </div>
-        </div>
+    <footer class="bg-light text-center py-4">
+        <a class="btn btn-outline-secondary  btn-hover">
+            <spam class="icon-keyboard_arrow_up"></spam>
+            <br>
+            Back to Top
         </a>
     </footer>
+    
     <script src="../js/plugins/jquery-3.7.1.min.js"></script>
     <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <script src="../js/plugins/jAlert/jAlert.min.js"></script>
     <script src="../js/plugins/jAlert/jAlert-functions.min.js"></script>
-    <script src="../js\plugins/jAlert/jAlert.css.min.js"></script>
+    <script src="../jsplugins/jAlert/jAlert.css.min.js"></script>
     <script type="text/javascript" src="../js/plugins/slick/slick.min.js"></script>
     <script src="../js/images.js"></script>
+    <script src="../js/plugins/Bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

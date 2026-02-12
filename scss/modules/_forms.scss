@@ -1,13 +1,6 @@
 /*Index Contact Me*/
 @use "../utilities/index" as *;
 
-#message-info input {   /*How I want my input bars to look*/
-    width: 100%;
-    background-color: white;
-    border: 2px solid $border-colors;
-    border-bottom: 0;
-}
-
 #message {
     padding-bottom: 50%;
 }
@@ -33,4 +26,42 @@
 }
 .js-enabled #reference-form {
     display: contents;
+}
+
+#foot-buttons {
+    margin-top: 1rem;
+}
+
+//Failure Form Popups
+.field-error {
+    font-size: 0.85rem;
+    color: red;
+    margin-top: 6px;
+    min-height: 18px; /* prevents layout jumping */
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+
+.field-error.show {
+    opacity: 1;
+}
+
+.input-invalid {
+    border: 2px solid red !important;
+    outline: none;
+}
+
+.input-valid {
+    border: 2px solid green !important;
+}
+
+#form-status {
+    margin-top: 10px;
+    font-weight: 600;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+
+#form-status.show {
+    opacity: 1;
 }

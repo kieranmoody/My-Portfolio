@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://kieran-moody.netmatters-scs.co.uk/sitemap.xml
+

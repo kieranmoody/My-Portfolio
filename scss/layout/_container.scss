@@ -1,182 +1,8 @@
+/*Containers*/
 @use "../utilities/index" as *;
-
-/*Index Title*/
-
-.header-positioning { /*Controls the header, and the proportions of the two sections*/
-    display: grid;
-    grid-template-columns: 0.20fr 1fr;
-    width: 100%;
-    border-bottom: 5px solid $border-colors;
-
-}
-
-.website-head {
-    position: relative;
-}
-
-.title-container { /*Positioning of the title overlay*/
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: space-between;
-    min-width: 0;
-    padding: 15% 10px 5%;
-    z-index: 2;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.pull-out-menu {
-    display: none;
-    background-color: $alternative-background;
-    width: 100%;
-    overflow-x:hidden;
-
-}
-
-.pull-out-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-row: auto auto;
-    grid-column-gap: 20px;
-    grid-row-gap: 10px;
-    z-index: 1000;
-}
 
 .js-enabled .js-disabled{
     display: none;
-}
-
-.js-enabled .margin {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    border-right: 0;
-    
-}
-
-.js-enabled .header-positioning {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.20fr 1fr;
-}
-
-.pull-out-grid, 
-.pull-out-contact {
-    width: 100%;
-}
-
-/*Index Main Content*/
-
-.meat-positioning { /*Positioning of the main body of text, also a grid for later use*/
-    padding: 15px;
-    display: grid;
-}
-
-#highlights { /*The positioning of the highlights section*/
-    display: flex;
-    padding-bottom: 10px;
-    gap: 10px;
-}
-
-.highlight-paragraph {
-    width:fit-content;
-    padding: 0 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-
-.highlight-box-inner {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex: 1;
-}
-
-.highlight-box {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-}
-
-    /*Index Treehouse*/
-#treehouse-collection { /*The entire section*/
-    display: flex;
-    flex-direction: column-reverse;
-    padding-bottom: 10px;
-}
-
-#treehouse-info { 
-    text-align: center;
-    padding: 10px 10px;
-}
-
-.highlight-box, 
-#treehouse-collection {
-    border: 2px solid $border-colors;
-    background-color: $alternative-background;
-}
-
-/*About Page*/
-#who-am-i { /*The main descriptor*/
-    display: flex;
-    flex-direction: column;
-    border: 2px solid $border-colors;
-    padding: 10px 10px;
-}
-
-#my-desc {
-    text-align: center;
-    padding: 0 5px 5px;
-}
-
-#about-further { /*The secondary descriptor*/
-    width: 100%;
-    text-align: center;
-    padding-top: 20px;
-}
-
-/*SCS Scheme Page*/
-#scs-scheme {
-    max-width: 100%;
-    text-align: center;
-}
-
-#intro-scion,
-#treehouse-desc,
-#netmatters-desc    {
-    border: 2px solid $border-colors;
-}
-
-#treehouse-desc {
-    border-top: 0;
-    border-bottom: 0;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-#netmatters-desc ul {
-    list-style-type: none;
-}
-
-/*Coding Examples Page*/
-#highlight-one-description {
-    border: 2px solid $border-colors;
-    padding: 5px;
-    text-align: center;
-}
-
-/*Portfolio*/
-#carousel-positioning {
-  min-width: 0;
-  padding: 15px;
-}
-
-.slick-prev:before,
-.slick-next:before {
-    color: $border-colors;
 }
 
 .slide-text {
@@ -188,11 +14,22 @@
     margin: 0 auto;
 }
 
-.carousel-disabled {
-    width: 75%;
-    margin: 0 auto;
-    padding-bottom: 15px;
-    display: flex;
-    flex-direction: column;
+#my-details p {
+    margin-bottom: 0; 
 }
+
+.highlight-buttons {
+    justify-content: center;
+}
+
+.slick-prev {
+    left: 25px;
+}
+
+.slick-next {
+    right: 25px;
+}
+
+
+
 

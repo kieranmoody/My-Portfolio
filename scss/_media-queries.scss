@@ -1,71 +1,15 @@
 @use "utilities/index" as *;
 
+
 @media (max-width: 499px) {
-    .title-container {
-        padding: 10% 10px 2.5%;
-    }
     .title-animate {
         margin: 0.5em 0;
     }
 }
 
-@media (min-width: 500px) {
-    .header-positioning {
-        grid-template-columns: none;
-        grid-template-rows: 0.20fr 1fr;
-    }
-
-    .site-map ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        font-size: $default-text-size;
-    }
-
-    .logo {
-        width: auto;
-        height: fit-content;
-        display: flex;
-        justify-content: center;
-    }
-
-    header .margin,
+@media (min-width: 500px) { 
     header img      {
         width: 100%;
-    }
-
-    header .margin {
-        border: none;
-    }
-
-    .title-container {
-        padding: 10% 10px 2.5%;
-    }
-
-    .website-title h1 {
-        font-size: 2.3rem;
-    }
-
-    .website-title {
-        font-size: 1.5rem;
-    }
-
-    .scroll-down,
-    .back-to-top {
-        font-size: 1rem;
-    }
-
-    .website-head,
-    .website-head img,
-    .title-container     {
-        max-height: 35vh;
-    }
-
-    #treehouse-highlight img {
-        max-height:35vh;
-        display:flex;
-        justify-self: center;
     }
 
     #message {
@@ -74,42 +18,20 @@
 }
 
 @media (min-width: 750px) {
-    .title-container {
-        padding: 7.5% 10px 2.5%;
-    }
-
-    header .logo {
-        font-size: 2.375rem
-    }
     header .social-media {
         font-size: 2rem;
     }
-    header .site-map ul {
-        font-size: 1.25rem;
-    }
-
-    .meat-positioning {
-        font-size: 1.5rem;
-    }
-
+    
     #scs-scheme h3,
     #portfolio h1,
     #examples h1,
     #index h3,
     #index h5 {
         font-size: 2rem;
-    }
-
-    .highlight-box .button {
-        font-size: 1.5rem;
-    }
+    }  
 }
 
 @media (min-width: 1000px) {
-    .title-container {
-        padding: 5% 10px 2.5%;
-    }
-
     #message {
         padding-bottom: 15%;
     }
@@ -118,45 +40,15 @@
         padding-left: 50px;
         padding-right: 50px;
     }
-
-    .highlight-box img {
-        height: 35vh;
-    }
 }
 
 @media (min-width: 1500px) {
-    .title-container {
-        padding: 3.5% 10px 1.5%;
-    }
     #message {
         padding-bottom: 5%;
     }
 }
 
-@media (min-width: 450px) {
-    #who-am-i {
-        flex-direction: row;
-    }
-}
-
-@media (min-width: 750px) {
-    #who-am-i {
-        flex-direction: column-reverse;
-    }
-}
-
-@media (min-width: 500px) {
-    #treehouse-link {
-        display: block;
-    }
-    #treehouse-link:hover {
-        text-decoration: underline;
-        cursor: pointer;
-    }
-}
-
-@media (min-width: 750px) {
-    #intro-scion,
+@media (min-width: 750px) {    
     #treehouse-desc {
         padding-left: 25px;
         padding-right: 25px;
@@ -164,18 +56,23 @@
 }
 
 @media (min-width: 1000px) {
-    #intro-scion,
     #treehouse-desc {
         padding-left: 50px;
         padding-right: 50px;
     }
 }
 
-@media (min-width: 1500px) {
-    #intro-scion,
+@media (min-width: 1500px) {    
     #treehouse-desc {
         padding-left: 100px;
         padding-right: 100px;
+    }
+}
+
+/*About Me*/
+@media (max-width: 767px) {
+    #personal-profile {
+        max-height: 25vh;
     }
 }
 
@@ -186,39 +83,35 @@
     }
 }
 
-@media (min-width: 1000px) {
-    #highlight-one-images {
-        flex-direction: row;
-    }
-    #highlight-one-images #code-one-html {
-        width: 60%;
-        height: auto;
-    }
-    #highlight-one-images #code-one-scss {
-        width: 35%;
-    }
-}
-
 //Portfolio Media Queries
 @media (min-width: 800px) {
     .js-enabled .your-class .slick-slide {
         margin: 0 10px; /* gap size */
     }
-    .carousel-disabled {
-        width: 35%;
-        justify-content: space-around;
-    }
-    .no-js .your-class {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
+    
+    
+
+}
+
+@media (max-width: 768px) {
+    .code-stack {
+        height: 300px;
     }
 
-    .no-js .carousel-disabled {
-        width: calc(50% - 20px);
-        margin: 0;
+    .file-back {
+        top: 25px;
+        left: 20px;
     }
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    position: static !important; /* default Bootstrap */
+    width: 100% !important;
+    height: auto !important;
+    transform: none !important;
+    background-color: rgb(33, 37, 41);
+  }
 }
 
 /* Bug Fixes*/

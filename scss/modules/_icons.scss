@@ -1,8 +1,24 @@
 @use "../utilities/index" as *;
 /*Icon related*/
+
+//General
 .social-media { /*Positioning of the icons*/
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     font-size: 1.5rem;
+}
+
+.social-media a {
+    color: $primary-text;;
+}
+
+.social-media a:hover {
+    color: $primary-accent;
+}
+
+//Portfolio
+.slick-prev:before,
+.slick-next:before {
+    color: $primary-accent;
 }

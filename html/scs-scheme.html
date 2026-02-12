@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The SCS Scheme</title>
+    <!--Links Roboto and Poppins-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../lightbulb.png">
+    <link rel="stylesheet" href="../js/plugins/Bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/icons.css">
     <link rel="stylesheet" href="../css/hamburgers.min.css">
@@ -14,135 +17,109 @@
 </head>
 <body>
     <header>
-        <div class="header-positioning"> <!--Controlls the size of the header/the grid's proportions-->
-            <div class="margin"> <!--Side section of the header, controls the positioning within the container (padding)-->
-                <div class="margin-flex">
-                    <div class="burger-positioning">
-                        <a href="../index.html" class="logo">M</a> 
-                        <div class="hamburger hamburger--spin">
-                            <div class="hamburger-box">
-                                <div class="hamburger-inner"></div>
-                            </div>
-                        </div>
-                        <div class="pull-out-menu">
-                            <div class="site-map">
-                                <ul>
-                                    <div class="pull-out-grid">
-                                        <li><a href="about.html">About Me</a></li>
-                                        <li><a href="portfolio.html">My Portfolio</a></li>
-                                        <li><a href="examples.html">Coding Examples</a></li>
-                                        <li><a href="scs-scheme.html" class="we-are-here">SCS Scheme</a></li>
-                                    </div>
-                                    <div class="pull-out-contact">
-                                        <li><a href="../index.html#site-foot">Contact Me</a></li>
-                                    </div>
-                                </ul>
-                            </div>
-                            <div class="social-media">
-                                <div>
-                                    <a href="https://github.com/kieranmoody" target="_blank"><span class="icon-github-square"></span></a>
-                                </div>
-                                <div>
-                                    <a href="https://www.linkedin.com/in/kieran-moody-805817242/" target="_blank"><span class="icon-linkedin-square"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> 
-                    <div class="link-tree"> <!--Seperates the list from the logo-->
-                        <div class="site-map js-disabled">
-                            <ul> <!--The linktree in the header corner-->
-                                <li><a href="about.html">About Me</a></li>
-                                <li><a href="portfolio.html">My Portfolio</a></li>
-                                <li><a href="examples.html">Coding Examples</a></li>
-                                <li><a href="scs-scheme.html" class="we-are-here">SCS Scheme</a></li>
-                                <li><a href="../index.html#site-foot">Contact Me</a></li>
-                            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                        </div>
-                        <div class="social-media js-disabled"> <!--Social media's, split into 2 divs so that it can be split into a triangle (1 and 2)-->
-                            <div>
-                                <a href="https://github.com/kieranmoody" target="_blank"><span class="icon-github-square"></span></a>
-                            </div>
-                            <div>
-                                <a href="https://www.linkedin.com/in/kieran-moody-805817242/" target="_blank"><span class="icon-linkedin-square"></span></a>
-                            </div>
-                        </div>
-                    </div>
+            <div class="collapse navbar-collapse" id="mainNav">
+
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link navbar-brand" href="../index.html">M</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">My Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="examples.html">Coding Examples</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="scs-scheme.html">SCS Scheme</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html#site-foot">Contact</a></li>
+                </ul>
+
+                <div class="d-flex gap-3 social-media">
+                    <a href="https://github.com/kieranmoody" class="text-white btn-hover">
+                        <span class="icon-github-square"></span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/kieran-moody-805817242" class="text-white btn-hover">
+                        <span class="icon-linkedin-square"></span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        </nav>
+    </header>
+    
+    <section class="bg-dark text-white text-center py-5 position-relative">
+            <img src="../images/title-background.jpg" class="position-absolute w-100 h-100 top-0 start-0 object-fit-cover opacity-50 title-image">
+
+            <div class="container position-relative">
+                <h1 class="display-4 text-white title-animate">The SCS Scheme</h1>
+                <p class="lead text-white mb-5">Training, learning and industry preparation</p>
+                <a href="#scs-scheme" class="btn btn-outline-secondary btn-hover">Scroll Down 
+                    <br>
+                    <span class="icon-keyboard_arrow_down"></span>
+                </a>
+            </div>
+    </section>
+
+    <main class="py-5" id="scs-scheme">
+        <div class="container">
+
+            <div class="mb-5 text-center">
+                <h3>Introduction to the Scion Coalition Scheme</h3>
+                <p>
+                    The Scion Coalition Scheme is an intensive training programme run by Netmatters
+                    to prepare candidates for web development careers. Under senior developers,
+                    training typically lasts 6–9 months and covers a wide technical skill set.
+                </p>
+            </div>
+
+            <div class="row align-items-center mb-5" id="treehouse-desc">
+                <div class="col-md-6">
+                    <h3>Treehouse</h3>
+                    <p>
+                    Treehouse is an online learning platform covering HTML, C#, iOS development,
+                    data analysis and more. Users earn points to track learning progress.
+                    </p>
+                    <p><strong>Total Score: 2472</strong></p>
+                    <a href="https://teamtreehouse.com/profiles/kieranmoody2" class="btn btn-primary btn-hover" target="_blank">
+                    View Profile
+                    </a>
+                </div>
+
+                <div class="col-md-6 text-center">
+                    <img src="../images/treehouse-score.png" class="img-fluid rounded shadow">
                 </div>
             </div>
-            <div class="website-head"> 
-                <img src="../images/title-background.jpg" class="title-image">
-                <div class="title-container"> <!--Contains the overlay- this is where the flex is--> <!--Controls the positioning within the container (padding, etc)-->
-                    <div class="website-title"> <!--How is the title framed-->
-                        <div>
-                            <h1 class="title-animate">The SCS Scheme</h1>
-                        </div>
-                    </div>
-                    <a href="#scs-scheme"><div class="scroll-down"> <!--Link that takes you to the bottom of the page-->
-                        <div>
-                            Scroll Down
-                        </div>
-                        <div>
-                            <span class="icon-keyboard_arrow_down">
-                            </span>
-                        </div>
-                    </div>
+
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h3>About Netmatters</h3>
+                    <ul>
+                        <li>Established 2008</li>
+                        <li>Technology company</li>
+                        <li>Training award winners</li>
+                        <li>Digital marketing & software development</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 text-center">
+                    <a href="https://www.netmatters.co.uk/" target="_blank">
+                        <img src="../images/netmatters-logo.jpg" class="img-fluid rounded shadow btn-hover">
                     </a>
                 </div>
             </div>
-        </div>
-    </header>
-    <main>
-        <div class="meat-positioning" id="scs-scheme">
-            <div id="intro-scion">
-                <h3>Introduction to the Scion Coalition Scheme</h3>
-                The Scion Coalition Scheme is an intensive, specially tailored training program run by Netmatters in order to give willing candidates the opportunity to enter the industry as web developers. Under the supervision of senior web developers, scions generally aim to complete training within six to nine months. The course is intensive and therefore the level of learning achieved is extensive in a short space of time.
-            </div>
-            <div id="treehouse-desc">
-                <div>
-                    <h3>Treehouse</h3>
-                    Treehouse is an online learning community, featuring videos covering a number of topics from basic HTML to C# programming, iOS development, data analysis, and more. By completing courses users can earn points, allowing them to track their progress and see how much they?ve covered in certain areas.
-                    <br> 
-                    <p>Total Score: 2472</p>
-                </div>
-                <div>
-                    <img src="../images/treehouse-score.png" alt="My treehouse page, visable when you click the link">
-                        <div id="treehouse-link">
-                            <link><a href="https://teamtreehouse.com/profiles/kieranmoody2" target="_blank">https://teamtreehouse.com/profiles/kieranmoody2</a></link>
-                        </div>
-                </div>
-            </div>
-            <div id="netmatters-desc">
-                <div>
-                    <h3>About Netmatters</h3>
-                    <ul>
-                        <li>Established in 2008</li>
-                        <li>Norfolk's leading technology company</li>
-                        <li>Winner of the Princess Royal Training Award</li>
-                        <li>Winner of EDP Skills of Tomorrow Award</li>
-                        <li>80+ staff, 2 locations across Norfolk</li>
-                        <li>Digital Marketing, Website & Software development & IT Support</li>
-                        <li>Broad Spectrum of clients, working nationwide</li>
-                        <li>Operate to strict company values</li>
-                    </ul>
-                </div>
-                <div>
-                    <a href="https://www.netmatters.co.uk/" target="_blank"><img src="../images/netmatters-logo.jpg" alt="The Netmatters logo"></a>
-                </div>
-            </div>
+
         </div>
     </main>
-    <footer>
-        <a href="#"><div class="back-to-top">
-            <div>
-                <spam class="icon-keyboard_arrow_up"></spam>
-            </div>
-            <div>
-                Back to Top
-            </div>
-        </div>
+
+    <footer class="bg-light text-center py-4">
+        <a class="btn btn-outline-secondary">
+            <spam class="icon-keyboard_arrow_up"></spam>
+            <br>
+            Back to Top
         </a>
     </footer>
+    <script src="../js/plugins/Bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../js/plugins/jquery-3.7.1.min.js"></script>
     <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <script src="../js/plugins/jAlert/jAlert.min.js"></script>

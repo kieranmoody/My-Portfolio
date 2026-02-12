@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kieran Moody's Portfolio</title>
-    <!--Links newsreader and Noticia Text-->
+    <!--Links Roboto and Poppins-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="lightbulb.png">
+    <link rel="stylesheet" href="js/plugins/Bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/hamburgers.min.css">
@@ -15,126 +17,135 @@
 </head>
 <body>
     <header>
-        <div class="header-positioning"> <!--Controlls the size of the header/the grid's proportions-->
-            <div class="margin"> <!--Side section of the header, controls the positioning within the container (padding)-->
-                <div class="margin-flex">
-                    <div class="burger-positioning">
-                        <a href="#index" class="logo we-are-here">M</a> 
-                        <div class="hamburger hamburger--spin">
-                            <div class="hamburger-box">
-                                <div class="hamburger-inner"></div>
-                            </div>
-                        </div>
-                        <div class="pull-out-menu">
-                            <div class="site-map">
-                                <ul>
-                                    <div class="pull-out-grid">
-                                        <li><a href="html/about.html">About Me</a></li>
-                                        <li><a href="html/portfolio.html">My Portfolio</a></li>
-                                        <li><a href="html/examples.html">Coding Examples</a></li>
-                                        <li><a href="html/scs-scheme.html">SCS Scheme</a></li>
-                                    </div>
-                                    <div class="pull-out-contact">
-                                        <li><a href="#site-foot">Contact Me</a></li>
-                                    </div>
-                                </ul>
-                            </div>
-                            <div class="social-media">
-                                <div>
-                                    <a href="https://github.com/kieranmoody" target="_blank"><span class="icon-github-square"></span></a>
-                                </div>
-                                <div>
-                                    <a href="https://www.linkedin.com/in/kieran-moody-805817242/" target="_blank"><span class="icon-linkedin-square"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> 
-                    <div class="link-tree"> <!--Seperates the list from the logo-->
-                        <div class="site-map js-disabled">
-                            <ul> <!--The linktree in the header corner-->
-                                <li><a href="html/about.html">About Me</a></li>
-                                <li><a href="html/portfolio.html">My Portfolio</a></li>
-                                <li><a href="html/examples.html">Coding Examples</a></li>
-                                <li><a href="html/scs-scheme.html">SCS Scheme</a></li>
-                                <li><a href="#site-foot">Contact Me</a></li>
-                            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
 
-                        </div>
-                        <div class="social-media js-disabled"> <!--Social media's, split into 2 divs so that it can be split into a triangle (1 and 2)-->
-                            <div>
-                                <a href="https://github.com/kieranmoody" target="_blank"><span class="icon-github-square"></span></a>
-                            </div>
-                            <div>
-                                <a href="https://www.linkedin.com/in/kieran-moody-805817242/" target="_blank"><span class="icon-linkedin-square"></span></a>
-                            </div>
-                        </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNav">
+
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link navbar-brand active" href="#index">M</a></li>
+                        <li class="nav-item"><a class="nav-link" href="html/about.html">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="html/portfolio.html">My Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="html/examples.html">Coding Examples</a></li>
+                        <li class="nav-item"><a class="nav-link" href="html/scs-scheme.html">SCS Scheme</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#site-foot">Contact Me</a></li>
+                    </ul>
+
+                    <div class="d-flex gap-3 social-media">
+                        <a href="https://github.com/kieranmoody" target="_blank" class="text-white">
+                        <span class="icon-github-square"></span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/kieran-moody-805817242/" target="_blank" class="text-white">
+                        <span class="icon-linkedin-square"></span>
+                        </a>
                     </div>
+
                 </div>
             </div>
-            <div class="website-head"> 
-                <img src="images/title-background.jpg" class="title-image">
-                <div class="title-container"> <!--Contains the overlay- this is where the flex is--> <!--Controls the positioning within the container (padding, etc)-->
-                    <div class="website-title"> <!--How is the title framed-->
-                        <div>
-                            <h1 class="title-animate">My Name is Kieran Moody</h1>
-                        </div>
-                        <div>
-                            I am a Web Developer
-                        </div>
-                    </div>
-                    <a href="#index"><div class="scroll-down"> <!--Link that takes you to the bottom of the page-->
-                        <div>
-                            Scroll Down
-                        </div>
-                        <div>
-                            <span class="icon-keyboard_arrow_down">
-                            </span>
-                        </div>
-                    </div>
-                    </a>
-                </div>
-            </div>
-        </div>
+        </nav>
     </header>
+    <section class="bg-dark text-white text-center py-5 position-relative">
+            <img src="images/title-background.jpg" class="position-absolute w-100 h-100 top-0 start-0 object-fit-cover opacity-50 title-image">
+
+            <div class="container position-relative">
+                <h1 class="display-4 text-white title-animate">My Name is Kieran Moody</h1>
+                <p class="lead text-white mb-5">I am a Web Developer</p>
+                <a href="#index" class="btn btn-outline-secondary btn-hover">
+                    Scroll Down 
+                    <br>
+                    <span class="icon-keyboard_arrow_down"></span>
+                </a>
+            </div>
+    </section>
     <main>
-        <div class="meat-positioning" id="index"> <!--Controls the spacing between the header and the -->
-            <div id="site-meat"> <!--Controls the positioning of the main body of content-->
-                <div id="highlight-collection"> <!--Groups the highlight section (including the heading)-->
-                    <h3>Highlights</h3>
-                    <div id="highlights"> <!--Controls the positioning of both highlights as a group-->
-                        <div class="highlight-box zoomable-box" id="highlight-one"> <!--Groups Highlight One together-->
-                            <img src="images/highlight-one-netmatters.png" alt="An image of my copy of the netmatters website">
-                            <div class="highlight-box-inner">
-                                <div class="highlight-paragraph">
-                                    <p>This is an image that shows the Netmatters website that I made, which is a copy of a version I was given. It is the first large-scale project I have completed and thus contains mistakes and flawed methodology. However I find it acts as a good indicator of my ability to learn and grow from my own mistakes.</p>
+        <div class="container py-5" id="index"> <!--Controls the spacing between the header and the -->
+            <section class="mb-5">
+                <h3 class="text-center mb-4">Highlights</h3>
+                <div class="row g-4">
+                    <!-- Highlight 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm">
+
+                            <img src="images/highlight-one-netmatters.png" class="card-img-top" alt="An image of my copy of the netmatters website">
+                            <div class="card-body d-flex flex-column">
+
+                                <p class="card-text">
+                                    This is an image that shows the Netmatters website that I made, which is a copy of a version I was given. It is the first large-scale project I have completed and thus contains mistakes and flawed methodology. However I find it acts as a good indicator of my ability to learn and grow from my own mistakes.
+                                </p>
+
+                                <div class="mt-auto d-flex gap-2 highlight-buttons">
+                                    <a href="https://netmatters.kieran-moody.netmatters-scs.co.uk" target="_blank" class="btn btn-primary btn-hover">
+                                        View Here
+                                    </a>
+                                    <a href="html/examples.html#highlight-one-code" class="btn btn-secondary btn-hover"> 
+                                        Read More
+                                    </a>
                                 </div>
-                                <div class="highlight-buttons">
-                                    <a href="https://netmatters.kieran-moody.netmatters-scs.co.uk" target="_blank"><button class="button">View Here</button></a>
-                                    <a href="html/examples.html#highlight-one-code"><button class="button">Read More</button></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="highlight-box  zoomable-box" id="highlight-two"> <!--Groups Highlight Two together-->
-                            <img src="images/under-construction-temp-two.webp" alt="Under construction, no highlight to see">
-                            <div class="highlight-box-inner">
-                                <div class="highlight-paragraph">
-                                    <p>No available highlights yet, coming soon!</p>
-                                </div>
-                                <a href="#"><button class="button">Read More</button></a>
+
                             </div>
                         </div>
                     </div>
+
+                    <!-- Highlight 2 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm">
+
+                            <img src="images/highlight-two-javaarray.png" class="card-img-top" alt="An image of my copy of the netmatters website">
+                            <div class="card-body d-flex flex-column">
+
+                                <p class="card-text">
+                                    This is an image that a random image generator that allows the user to generate images, attach them to an email, and then view the collection in a "gallery". This is the first project in which I worked on javascript to a large extent, without much aid from plugins. When compared to my previous works, it acts as a good indicator of both progress and creativity.
+                                </p>
+
+                                <div class="mt-auto d-flex gap-2 highlight-buttons">
+                                    <a href="http://js-array.kieran-moody.netmatters-scs.co.uk/" target="_blank" class="btn btn-primary btn-hover">
+                                        View Here
+                                    </a>
+                                    <a href="html/examples.html#highlight-two-code" class="btn btn-secondary btn-hover"> 
+                                        Read More
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Highlight 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 shadow-sm">
+                            <img src="images/under-construction-temp-two.webp" class="card-img-top" alt="Under construction, no highlight to see">
+                            <div class="card-body d-flex flex-column">
+                                <p class="card-text">
+                                    No available highlights yet, coming soon!
+                                </p>
+                                <div class="mt-auto d-flex gap-2 highlight-buttons">
+                                    <a class="btn btn-primary disabled btn-hover">
+                                        View Here
+                                    </a>
+                                    <a class="btn btn-secondary disabled btn-hover">
+                                        Read More
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-                <div id="treehouse-collection" class="zoomable-box"> <!--Controls the positioning of both highlights as a group-->
-                    <a href="html/scs-scheme.html#treehouse-desc"><button class="button">Learn More!</button></a>
-                    <div id="treehouse-info"> <!--Groups the treehouse information-->
-                        <p>I regularly use Treehouse to improve my skills, and have so far amassed a score of 2,472, with the majority of my work being focused on web-development.</p>
-                    </div>
-                    <div id="treehouse-highlight"> <!--Controls the treehouse image-->
-                        <img src="images/treehouse-score.png" alt="My treehouse page, visable when you click the button">
-                    </div>
+            </section>
+
+            <div class="card my-5 shadow-sm">
+                <img src="images/treehouse-score.png" class="card-img-top">
+                <div class="card-body text-center">
+                    <p>I regularly use Treehouse to improve my skills and have amassed a score of 2,472.</p>
+                    <a href="html/scs-scheme.html#treehouse-desc" class="btn btn-secondary btn-hover">Learn More</a>
                 </div>
             </div>
+
             <div id="site-foot"> <!--Positioning of the call-to-action-->
                 <div id="call-to-action"> <!--The Text portion of the call-->
                     <div>
@@ -151,41 +162,44 @@
                         <a href="mailto:kieranmoody127@gmail.com">kieranmoody127@gmail.com</a>
                     </div>
                 </div>
-                <form method="GET" id="foot-buttons" onsubmit="return validateForm()" novalidate>
-                    <div id="message-info"> <!--Controls the input options, with the children controlling layout-->
-                        <div id="contact-names"> <!--Split into 3 sections as with wider screens they will be split-->
-                            <input placeholder="*First Name..." class="row-one" id="first-name" name="input" type="name" maxlength="50" value>
-                            <input placeholder="*Last Name..." class="row-one" id="last-name" name="input" type="name" maxlength="50" value>
-                        </div>
-                        <div>
-                            <div>
-                                <input placeholder="*Email Address..." class="row-two" id="email-address" name="email" type="email" maxlength="128" value>
-                                <input placeholder="Subject..." class="row-two" id="subject" name="subject" type="text" maxlength="128" value>
-                            </div>
-                            <div>
-                                <input placeholder="*Message..." id="message" name="message" type="text" value>
-                            </div>
-                        </div>
+                <form class="row g-3" id="foot-buttons"method="GET" onsubmit="return validateForm()" novalidate>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" id="first-name" placeholder="*First Name">
                     </div>
-                    <div id="submit-button">
-                        <button type="submit" aria-label="submit" class="button">Submit</button>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" id="last-name" placeholder="*Last Name">
+                    </div>
+                    <div class="col-12">
+                        <input type="email" class="form-control" id="email-address" placeholder="*Email Address">
+                    </div>
+                    <div class="col-12">
+                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                    </div>
+                    <div class="col-12">
+                        <textarea class="form-control" id="message" rows="5" placeholder="*Message"></textarea>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primary w-100 btn-hover" type="submit">Submit</button>
+                    </div>
+                    <div class="col-12 alert" id="form-status" role="alert">
+                        <strong></strong>
                     </div>
                 </form>
             </div>
         </div>
     </main>
-    <footer>
-        <a href=#><div class="back-to-top"> <!--Controls the positioning of the back to top link-->
-            <div>
-                <spam class="icon-keyboard_arrow_up"></spam>
-            </div>
-            <div>
-                Back to Top
-            </div>
-        </div>
+    
+    <footer class="bg-light text-center py-4">
+        <a class="btn btn-outline-secondary btn-hover">
+            <spam class="icon-keyboard_arrow_up"></spam>
+            <br>
+            Back to Top
         </a>
     </footer>
+
+    </footer>
     <!--JS Links-->
+    <script src="js/plugins/Bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="js/plugins/jquery-3.7.1.min.js"></script>
     <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <script src="js/plugins/jAlert/jAlert.min.js"></script>

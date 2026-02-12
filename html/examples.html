@@ -4,121 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coding Examples</title>
+    <!--Links Roboto and Poppins-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../lightbulb.png">
+    <link rel="stylesheet" href="../js/plugins/Bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/icons.css">
     <link rel="stylesheet" href="../css/hamburgers.min.css">
     <link rel="stylesheet" href="../js/plugins/jAlert/jAlert.min.css">
 </head>
-<body>
+<body id="example-zoomlink">
     <header>
-        <div class="header-positioning"> <!--Controlls the size of the header/the grid's proportions-->
-            <div class="margin"> <!--Side section of the header, controls the positioning within the container (padding)-->
-                <div class="margin-flex">
-                    <div class="burger-positioning">
-                        <a href="../index.html" class="logo">M</a> 
-                        <div class="hamburger hamburger--spin">
-                            <div class="hamburger-box">
-                                <div class="hamburger-inner"></div>
-                            </div>
-                        </div>
-                        <div class="pull-out-menu">
-                            <div class="site-map">
-                                <ul>
-                                    <div class="pull-out-grid">
-                                        <li><a href="about.html">About Me</a></li>
-                                        <li><a href="portfolio.html">My Portfolio</a></li>
-                                        <li><a href="examples.html" class="we-are-here">Coding Examples</a></li>
-                                        <li><a href="scs-scheme.html">SCS Scheme</a></li>
-                                    </div>
-                                    <div class="pull-out-contact">
-                                        <li><a href="../index.html#site-foot">Contact Me</a></li>
-                                    </div>
-                                </ul>
-                            </div>
-                            <div class="social-media">
-                                <div>
-                                    <a href="https://github.com/kieranmoody" target="_blank"><span class="icon-github-square"></span></a>
-                                </div>
-                                <div>
-                                    <a href="https://www.linkedin.com/in/kieran-moody-805817242/" target="_blank"><span class="icon-linkedin-square"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> 
-                    <div class="link-tree"> <!--Seperates the list from the logo-->
-                        <div class="site-map js-disabled">
-                            <ul> <!--The linktree in the header corner-->
-                                <li><a href="about.html">About Me</a></li>
-                                <li><a href="portfolio.html">My Portfolio</a></li>
-                                <li><a href="examples.html" class="we-are-here">Coding Examples</a></li>
-                                <li><a href="scs-scheme.html">SCS Scheme</a></li>
-                                <li><a href="../index.html#site-foot">Contact Me</a></li>
-                            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                        </div>
-                        <div class="social-media js-disabled"> <!--Social media's, split into 2 divs so that it can be split into a triangle (1 and 2)-->
-                            <div>
-                                <a href="https://github.com/kieranmoody" target="_blank"><span class="icon-github-square"></span></a>
-                            </div>
-                            <div>
-                                <a href="https://www.linkedin.com/in/kieran-moody-805817242/" target="_blank"><span class="icon-linkedin-square"></span></a>
-                            </div>
-                        </div>
+                <div class="collapse navbar-collapse" id="mainNav">
+
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link navbar-brand" href="../index.html">M</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="portfolio.html">My Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="examples.html">Coding Examples</a></li>
+                        <li class="nav-item"><a class="nav-link" href="scs-scheme.html">SCS Scheme</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../index.html#site-foot">Contact</a></li>
+                    </ul>
+
+                    <div class="d-flex gap-3 social-media">
+                        <a href="https://github.com/kieranmoody" class="text-white">
+                            <span class="icon-github-square"></span>
+                        </a>
+                        <a href="https://linkedin.com/in/kieran-moody-805817242" class="text-white">
+                            <span class="icon-linkedin-square"></span>
+                        </a>
                     </div>
+
                 </div>
+
             </div>
-            <div class="website-head"> 
-                <img src="../images/title-background.jpg" class="title-image">
-                <div class="title-container"> <!--Contains the overlay- this is where the flex is--> <!--Controls the positioning within the container (padding, etc)-->
-                    <div class="website-title"> <!--How is the title framed-->
-                        <div>
-                            <h1 class="title-animate">Coding Examples</h1>
-                        </div>
-                    </div>
-                    <a href="#examples"><div class="scroll-down"> <!--Link that takes you to the bottom of the page-->
-                        <div>
-                            Scroll Down
-                        </div>
-                        <div>
-                            <span class="icon-keyboard_arrow_down">
-                            </span>
-                        </div>
-                    </div>
-                    </a>
-                </div>
-            </div>
-        </div>
+        </nav>
     </header>
-    <main>
-        <div class="meat-positioning" id="examples">
-            <div id="highlight-one-code">
-                <h3>Highlight One</h3>
-                <div id="highlight-one-images">
-                    <img class="zoomable" src="../images/coding-examples/highlight-code-one-html.png" id="code-one-html">
-                    <img class="zoomable" src="../images/coding-examples/highlight-code-two-scss.png" id="code-one-scss">
-                </div>
-                <div id="highlight-one-description">
-                    When making this code I used a mixture of html and scss (consequently, css). <br>
-                    This is worth pointing out to me because it is a solution to a problem that I made on my own. I noticed the services section acted in 2 groups as the width got larger. First one group changed formation then the other. I decided that I could split the two groups up and make each group a grid, so that it could change as and when the design required it to.<br>
-                    Importantly, it is not the solution that the makers of the original website used, yet it stil works.
+    
+    <section class="bg-dark text-white text-center py-5 position-relative">
+            <img src="../images/title-background.jpg" class="position-absolute w-100 h-100 top-0 start-0 object-fit-cover opacity-50 title-image">
+
+            <div class="container position-relative">
+                <h1 class="display-4 text-white title-animate">Coding Examples</h1>
+                <p class="lead text-white mb-5">Selected work and problem solving</p>
+                <a href="#examples" class="btn btn-outline-secondary btn-hover">Scroll Down 
+                    <br>
+                    <span class="icon-keyboard_arrow_down"></span>
+                </a>
+            </div>
+    </section>
+    
+    <main class="py-5" id="examples">
+        <div class="container">
+
+            <div class="card shadow-sm mb-4">
+                <div class="card-body">
+                    <h3 class="card-title text-center" id="highlight-one-code">Highlight One - Netmatters Website Copy</h3>
+
+                    <div class="code-stack zoomable-box my-4">
+                        <img src="../images/coding-examples/highlight-code-one-html.png" class="code-file file-back">
+                        <img src="../images/coding-examples/highlight-code-two-scss.png" class="code-file file-front">
+                    </div>
+
+                    <p class="card-text">
+                        This project used HTML and SCSS. I discovered the services section behaved in two layout groups at different widths.
+                        My solution was splitting them into separate grids so each could respond independently — a different solution from the original site, but functionally effective.
+                    </p>
                 </div>
             </div>
+
+            <div class="card shadow-sm mb-4">
+                <div class="card-body">
+                    <h3 class="card-title text-center" id="highlight-one-code">Highlight Two - Javascript Array Gallery</h3>
+
+                    <div class="code-stack zoomable-box my-4">
+                        <img src="../images/coding-examples/highlight-two-gallery-positioning.png" class="code-file file-back">
+                        <img src="../images/coding-examples/highlight-code-two-page-transition.png" class="code-file file-front">
+                    </div>
+
+                    <p class="card-text">
+                        This project uses; html, scss, and javascript. It was my first real project making use of javascript and jquery outside of using plugins, as well as my first time even touching apis. I think, even though I was learning as I was going, this project is the best indicator of my creativity. 
+                        <br>
+                        Design wise, I am particularly proud of the folder-like aesthetic on the gallery. It makes use of jAlert's zoom plugin to allow me to position the images in a compact way, stacked ontop of one another, and allowing the user to click on the stack to expand it onto their page. This solved the problem of how ugly the site would look if 1 email had, say, 9 or 10 images attached.
+                    </p>
+                </div>
+            </div>
+
         </div>
     </main>
-    <footer>
-        <a href=#><div class="back-to-top"> <!--Controls the positioning of the back to top link-->
-            <div>
-                <spam class="icon-keyboard_arrow_up"></spam>
-            </div>
-            <div>
-                Back to Top
-            </div>
-        </div>
+
+    <footer class="bg-light text-center py-4">
+        <a class="btn btn-outline-secondary btn-hover">
+            <spam class="icon-keyboard_arrow_up"></spam>
+            <br>
+            Back to Top
         </a>
     </footer>
+
+    <script src="../js/plugins/Bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../js/plugins/jquery-3.7.1.min.js"></script>
     <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
     <script src="../js/plugins/jAlert/jAlert.min.js"></script>

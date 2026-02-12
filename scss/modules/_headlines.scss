@@ -1,21 +1,11 @@
 @use "../utilities/index" as *;
 /*Headings*/
-.website-title { /*Makes the title show vertically*/
-    display: flex;
-    flex-direction: column;
-}
-
-#highlight-collection h3 { /*Sets the positioning of the highlight heading*/
-    text-align: center;
-    padding-bottom: 10px;
+.lead {
+    color: $primary-text;;
 }
 
 #call-to-action h5 {
     padding-bottom: 10px;
-}
-
-.meat-positioning div h1 { /*Temporary, for portfolio and coding examples*/
-    text-align: center;
 }
 
 #scs-scheme h3 {
@@ -26,3 +16,4 @@
 #highlight-one-code h3 {
     text-align: center;
 }
+
