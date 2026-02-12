@@ -592,6 +592,14 @@ body {
   pointer-events: none;
 }
 
+#example-zoomlink .ja_body .file-back {
+  left: 250px;
+}
+
+#example-zoomlink .ja_body .file-front {
+  left: 100px;
+}
+
 /*Icon related*/
 .social-media { /*Positioning of the icons*/
   display: flex;
