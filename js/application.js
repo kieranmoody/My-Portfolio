@@ -207,11 +207,60 @@ document.addEventListener("DOMContentLoaded", () => {
 
     //The user has typed something = dirty form
     form.addEventListener("input", () => {
-    const hasData = [...form.elements].some(el =>
-        el.tagName === "INPUT" || el.tagName === "TEXTAREA" ? el.value.trim() !== "" : false
-    );
-    formDirty = hasData;
-});
+        const hasData = [...form.elements].some(el =>
+            el.tagName === "INPUT" || el.tagName === "TEXTAREA" ? el.value.trim() !== "" : false
+        );
+        formDirty = hasData;
+    });
+
+    //Dynamic validation as user types
+    const fields = ['first-name', 'last-name', 'email-address', 'subject', 'message'];
+    fields.forEach(id => {
+      const input = document.getElementById(id);
+      if (!input) return;
+
+      input.addEventListener('input', () => {
+          //Validate only this field
+          switch(id) {
+              case 'first-name':
+                  input.value.trim() === "" 
+                      ? markInvalid(input, "First name is required")
+                      : markValid(input);
+                  break;
+
+                case 'last-name':
+                  input.value.trim() === "" 
+                      ? markInvalid(input, "Last name is required")
+                      : markValid(input);
+                  break;
+
+              case 'email-address':
+                  if (input.value.trim() === "") {
+                      markInvalid(input, "Email is required");
+                  } else if (!emailRegex.test(input.value.trim())) {
+                      markInvalid(input, "Enter a valid email address");
+                  } else {
+                      markValid(input);
+                  }
+                  break;
+
+              case 'subject':
+              if (input.value.trim() !== "") {
+                  markValid(input);
+              } else {
+                  input.classList.remove("input-valid");
+              }
+              break;
+
+              case 'message':
+                  input.value.trim() === "" 
+                      ? markInvalid(input, "Message cannot be empty")
+                      : markValid(input);
+                  break;
+
+          }
+      });
+     });
 
 });
 
@@ -307,10 +356,10 @@ function validateForm() {
         return false;
     }
 
-    showFormStatus("Form Completed Successfully!", true);
-    form.reset();
+    showFormStatus("Form submitted Successfully!", true);
+    
     formDirty = false;
-    return false;
+    return true;
 }
 
 
