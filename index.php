@@ -124,8 +124,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $response = $mailtrap->send($email);
 
-        var_dump(ResponseHelper::toArray($response));
-
         header("Location: index.php?success=1");
         exit;
     }

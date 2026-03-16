@@ -157,10 +157,19 @@
             <script>
                 document.addEventListener("DOMContentLoaded", function() {
                     const form = document.getElementById("foot-buttons");
+
                     if (form) {
                         form.scrollIntoView({ behavior: "instant", block: "start" });
                     }
+
                     showFormStatus("Form submitted successfully!", true);
+
+                    //Changes url so refresh doesn't repeat the success message
+                    if (window.history.replaceState) {
+                        const url = new URL(window.location);
+                        url.searchParams.delete('success');
+                        window.history.replaceState({}, document.title, url.pathname + "#foot-buttons");
+                    }
                 });
             </script>
         <?php endif; ?>
