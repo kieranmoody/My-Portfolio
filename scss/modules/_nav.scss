@@ -39,7 +39,7 @@ footer a:hover {
 
 .navbar {
     height: 50px;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: $secondary-title;
 }
 
 // Hide default navbar collapse for now
@@ -49,7 +49,7 @@ footer a:hover {
     left: 0;
     width: 250px; /* will slide out later */
     height: 100%;
-    background-color: $primary-text;;
+    background-color: $secondary-title;
     transform: translateX(-100%);
     transition: transform 0.3s ease;
     z-index: 9;
@@ -73,5 +73,11 @@ footer a:hover {
 #my-details a {
     color: $primary-text;;
     margin-bottom: 1rem;
+}
+
+.title {
+    background: $primary-title;
+    background: linear-gradient(0deg,$primary-title 0%, $secondary-title 100%);
+
 }
 

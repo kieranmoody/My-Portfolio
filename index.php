@@ -21,12 +21,14 @@ $db   = $_ENV['DB_NAME'];
 $user = $_ENV['DB_USER'];
 $pass = $_ENV['DB_PASS'];
 
+//Mailtrap Stuff
 $apiKey = $_ENV['MAILTRAP_API_KEY'];
 $personalEmail = $_ENV['PERSONAL_EMAIL'];
 
 $mailtrap = MailtrapClient::initSendingEmails(
     apiKey: $apiKey,
 );
+//
 
 try {
     $dsn = "mysql:host=$host;dbname=$db;charset=utf8mb4";
@@ -110,19 +112,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             ':message' => $message,
         ]);
 
+        //Mailtrap stuff
         $email = (new MailtrapEmail())
-            ->from(new Address('hello@demomailtrap.co', $firstName .' '. $lastName))
+            ->from(new Address('hello@kieran-moody.netmatters-scs.co.uk', $firstName .' '. $lastName))
             ->to(new Address($personalEmail))
-            ->subject('From Your Portfolio')
-            ->text (
-                "The subject of the message - " . $subject . "\n" .
+            ->subject('Your Portfolio')
+            ->text("The subject of the message - " . $subject . "\n" .
                 $message . "\n" .
-                "Message came with the email-address - " . $email
-            )
+                "Message came with the email-address - " . $email)
             ->category('Integration Test')
         ;
 
         $response = $mailtrap->send($email);
+
+        var_dump(ResponseHelper::toArray($response));
+
+        //
 
         header("Location: index.php?success=1");
         exit;

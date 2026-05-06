@@ -30,6 +30,42 @@
     right: 25px;
 }
 
+.slick-slide {
+    margin: 0 10px;
+}
+
+.projects-carousel img {
+    height: 20vh;
+    filter: brightness(70%);
+}
+
+.tech-stack {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: $primary-title;
+    color: white;
+    
+}
+
+.tech-stack p {
+    margin-bottom: 0;
+    padding: 2.5px 0;
+}
+
+html {
+    background-color: $background;
+}
+
+.projects-mainpage {
+    background-color: $panels;
+    color:white;
+}
+
+
+
+
+
 
 
 

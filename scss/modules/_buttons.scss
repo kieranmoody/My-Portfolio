@@ -1,20 +1,27 @@
 @use "../utilities/index" as *;
 /*Buttons*/
 .btn-primary {
-    background-color: #1d4ed8;
-    border-color: #1d4ed8;
+    background-color: $button-primary;
+    border-color: $button-primary;
+}
+.btn-primary:hover {
+    background-color: $button-primary-hover;
+    border-color: $button-primary-hover;
 }
 
-.btn-primary:hover {
-    background-color: $primary-accent;
-    border-color: $primary-accent;
+.btn-secondary {
+    background-color: $button-secondary;
+    border-color: $button-secondary;
+}
+.btn-secondary:hover {
+    background-color: $button-secondary-hover;
+    border-color: $button-secondary-hover;
 }
 
 .btn-outline-secondary {
     color: $secondary;
     border-color: $secondary;
 }
-
 .btn-outline-secondary:hover {
     background-color: $secondary;
     color: #fff;
@@ -31,4 +38,12 @@
     transform: translateY(0px);
 }
 
+.construction .btn-primary {
+    background-color: $button-primary-hover;
+    border-color: $button-primary-hover;
+}
 
+.construction .btn-secondary {
+    background-color: $button-secondary-hover;
+    border-color: $button-secondary-hover;
+}

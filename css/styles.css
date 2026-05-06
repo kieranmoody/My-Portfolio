@@ -387,15 +387,56 @@ body {
   right: 25px;
 }
 
+.slick-slide {
+  margin: 0 10px;
+}
+
+.projects-carousel img {
+  height: 20vh;
+  filter: brightness(70%);
+}
+
+.tech-stack {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #6834d4;
+  color: white;
+}
+
+.tech-stack p {
+  margin-bottom: 0;
+  padding: 2.5px 0;
+}
+
+html {
+  background-color: #fefefe;
+}
+
+.projects-mainpage {
+  background-color: #787878;
+  color: white;
+}
+
 /*Buttons*/
 .btn-primary {
-  background-color: #1d4ed8;
-  border-color: #1d4ed8;
+  background-color: #32c563;
+  border-color: #32c563;
 }
 
 .btn-primary:hover {
-  background-color: #2563eb;
-  border-color: #2563eb;
+  background-color: #6cdb91;
+  border-color: #6cdb91;
+}
+
+.btn-secondary {
+  background-color: #6834d4;
+  border-color: #6834d4;
+}
+
+.btn-secondary:hover {
+  background-color: #af93d7;
+  border-color: #af93d7;
 }
 
 .btn-outline-secondary {
@@ -418,6 +459,16 @@ body {
 
 .btn-hover:hover {
   transform: translateY(0px);
+}
+
+.construction .btn-primary {
+  background-color: #6cdb91;
+  border-color: #6cdb91;
+}
+
+.construction .btn-secondary {
+  background-color: #af93d7;
+  border-color: #af93d7;
 }
 
 /*Images*/
@@ -657,7 +708,7 @@ footer a:hover {
 
 .navbar {
   height: 50px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: #35166e;
 }
 
 #mainNav {
@@ -666,7 +717,7 @@ footer a:hover {
   left: 0;
   width: 250px; /* will slide out later */
   height: 100%;
-  background-color: #111827;
+  background-color: #35166e;
   transform: translateX(-100%);
   transition: transform 0.3s ease;
   z-index: 9;
@@ -689,6 +740,11 @@ footer a:hover {
 #my-details a {
   color: #111827;
   margin-bottom: 1rem;
+}
+
+.title {
+  background: #6834d4;
+  background: linear-gradient(0deg, #6834d4 0%, #35166e 100%);
 }
 
 /*Headings*/
@@ -865,7 +921,16 @@ footer a:hover {
     width: 100% !important;
     height: auto !important;
     transform: none !important;
-    background-color: rgb(33, 37, 41);
+  }
+}
+@media (max-width: 449px) {
+  .projects-carousel img {
+    height: 25vh;
+  }
+}
+@media (min-width: 450px) and (max-width: 799px) {
+  .projects-carousel img {
+    height: 40vh;
   }
 }
 /* Bug Fixes*/

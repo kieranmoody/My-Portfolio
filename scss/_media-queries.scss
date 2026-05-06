@@ -107,8 +107,19 @@
     width: 100% !important;
     height: auto !important;
     transform: none !important;
-    background-color: rgb(33, 37, 41);
   }
+}
+
+@media (max-width: 449px) {
+    .projects-carousel img {
+        height: 25vh;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 799px) {
+    .projects-carousel img {
+        height: 40vh;
+    }
 }
 
 /* Bug Fixes*/

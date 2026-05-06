@@ -18,7 +18,7 @@
         
         <main class="py-5" id="examples">
             <div class="container">
-
+                <!--Highlight One-->
                 <div class="card shadow-sm mb-4">
                     <div class="card-body">
                         <h3 class="card-title text-center" id="highlight-one-code">Highlight One - Netmatters Website Copy</h3>
@@ -35,9 +35,28 @@
                     </div>
                 </div>
 
+                <!--Highlight Two-->
                 <div class="card shadow-sm mb-4">
                     <div class="card-body">
-                        <h3 class="card-title text-center" id="highlight-one-code">Highlight Two - Javascript Array Gallery</h3>
+                        <h3 class="card-title text-center" id="highlight-two-code">Highlight Two - Javascript Array Gallery</h3>
+
+                        <div class="code-stack zoomable-box my-4">
+                            <img src="images/coding-examples/highlight-two-gallery-positioning.png" class="code-file file-back">
+                            <img src="images/coding-examples/highlight-code-two-page-transition.png" class="code-file file-front">
+                        </div>
+
+                        <p class="card-text">
+                            This project uses; html, scss, and javascript. It was my first real project making use of javascript and jquery outside of using plugins, as well as my first time even touching apis. I think, even though I was learning as I was going, this project is the best indicator of my creativity. 
+                            <br>
+                            Design wise, I am particularly proud of the folder-like aesthetic on the gallery. It makes use of jAlert's zoom plugin to allow me to position the images in a compact way, stacked ontop of one another, and allowing the user to click on the stack to expand it onto their page. This solved the problem of how ugly the site would look if 1 email had, say, 9 or 10 images attached.
+                        </p>
+                    </div>
+                </div>
+                
+                <!--Highlight Three-->
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h3 class="card-title text-center" id="highlight-three-code">Highlight Three - Admin Panel</h3>
 
                         <div class="code-stack zoomable-box my-4">
                             <img src="images/coding-examples/highlight-two-gallery-positioning.png" class="code-file file-back">

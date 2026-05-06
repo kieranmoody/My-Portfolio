@@ -2,6 +2,8 @@
 document.documentElement.classList.remove('no-js');
 document.documentElement.classList.add("js-enabled");
 
+
+
 //Mouse Pan Zoomable
 
 let isDragging = false;
@@ -162,12 +164,16 @@ $(function () {
 
 //Carousel
 $(document).ready(function () {
-    $('.your-class').slick({
+    $('.projects-carousel').slick({
         infinite: true,
-        slidesToShow: 1,
+        slidesToShow: 3,
         slidesToScroll: 1,
         dots: true,
         arrows: true,
+        pauseOnHover: true,
+        autoplay: true,
+        autoplaySpeed: 7500,
+        speed: 750,
         //Makes the carousel responsive to different widths
         responsive: [
             {
@@ -179,7 +185,7 @@ $(document).ready(function () {
                 }
             },
             {
-                breakpoint: 2000, 
+                breakpoint: 1650, 
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
@@ -189,6 +195,7 @@ $(document).ready(function () {
         ]
     });
 });
+
 
 //contact form verification
 
