@@ -21,7 +21,7 @@
                     <h3 class="text-center">Projects</h3>
                     <div class="row g-4 mt-4 projects-carousel">
                         <!-- Highlight Portfolio -->
-                        <div class="col-md-6 col-lg-4 carousel-disabled zoomable-box">
+                        <div class="col-md-6 col-lg-4 carousel-disabled">
                             <div class="card h-100 shadow-sm">
                                 <div class="image-holder">
                                     <div class="tech-stack">
@@ -55,7 +55,7 @@
                             </div>
                         </div>
                         <!-- Highlight 1 -->
-                        <div class="col-md-6 col-lg-4 carousel-disabled zoomable-box">
+                        <div class="col-md-6 col-lg-4 carousel-disabled">
                             <div class="card h-100 shadow-sm">
                                 <div class="image-holder">
                                     <div class="tech-stack">
@@ -92,7 +92,7 @@
                         </div>
 
                         <!-- Highlight 2 -->
-                        <div class="col-md-6 col-lg-4 carousel-disabled zoomable-box">
+                        <div class="col-md-6 col-lg-4 carousel-disabled">
                             <div class="card h-100 shadow-sm">
                                 <div class="image-holder">
                                     <div class="tech-stack">
@@ -128,7 +128,7 @@
                         </div>
 
                         <!-- Highlight 3 -->
-                        <div class="col-md-6 col-lg-4 carousel-disabled zoomable-box">
+                        <div class="col-md-6 col-lg-4 carousel-disabled">
                             <div class="card h-100 shadow-sm">
 
                                 <div class="image-holder">
@@ -164,7 +164,7 @@
                         </div>
 
                         <!-- Under Construction -->
-                        <div class="col-md-6 col-lg-4 carousel-disabled zoomable-box construction">
+                        <div class="col-md-6 col-lg-4 carousel-disabled construction">
                             <div class="card h-100 shadow-sm">
                                 <div class="image-holder">
                                     <div class="tech-stack">
