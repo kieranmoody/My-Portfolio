@@ -72,7 +72,7 @@
 /*About Me*/
 @media (max-width: 767px) {
     #personal-profile {
-        max-height: 25vh;
+        max-height: 35vh;
     }
 }
 
@@ -101,14 +101,7 @@
     }
 }
 
-@media (min-width: 992px) {
-  #mainNav {
-    position: static !important; /* default Bootstrap */
-    width: 100% !important;
-    height: auto !important;
-    transform: none !important;
-  }
-}
+
 
 @media (max-width: 449px) {
     .projects-carousel img {
@@ -119,6 +112,12 @@
 @media (min-width: 450px) and (max-width: 799px) {
     .projects-carousel img {
         height: 40vh;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-toggler {
+        display: block;
     }
 }
 

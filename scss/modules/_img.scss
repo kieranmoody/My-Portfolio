@@ -68,7 +68,7 @@
 }
 
 .file-back {
-    top: 40px;
+    top: 0;
     left: 40px;
     transform: rotate(-4deg);
     z-index: 1;
@@ -178,4 +178,8 @@
 }
 #example-zoomlink .ja_body .file-front {
     left: 100px;
+}
+
+#personal-profile {
+    max-height: 45vh;
 }

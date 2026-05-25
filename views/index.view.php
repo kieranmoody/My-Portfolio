@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id="html" lang="en">
     <?php require("partials/head.php") ?>
     <body>
         <?php require("partials/navigation.php") ?>
-        <section class="bg-dark text-white text-center py-5 position-relative title">
+        <section class="bg-dark text-white text-center py-5 position-relative main-page title">
 
                 <div class="container position-relative">
                     <h1 class="display-4 text-white title-animate">My Name is Kieran Moody</h1>
@@ -15,7 +15,7 @@
                     </a>
                 </div>
         </section>
-        <main>
+        <main class="main-page">
             <div class="container py-5" id="index"> <!--Controls the spacing between the header and the -->
                 <section class="mb-5">
                     <h3 class="text-center">Projects</h3>
@@ -41,14 +41,13 @@
                                 </div>
                                 <div class="card-body d-flex flex-column projects-mainpage">
                                     <p class="card-text">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sem risus, viverra nec convallis nec, fringilla mattis erat. Nulla lorem nisi, aliquet in magna nec, condimentum rhoncus ex. Mauris ac tincidunt arcu, et bibendum augue. Mauris varius ornare semper. Fusce viverra lacus ligula, finibus vehicula ex aliquam non. Fusce non arcu arcu. Integer ac tempus eros, ullamcorper dictum mauris. Proin ultricies vulputate leo nec imperdiet. Integer aliquet scelerisque tincidunt.
-                                    </p>
+                                        My portfolio contains both my projects, my general qualifications, and methods of contacting me. For consistencies sake I have used bootstrap to design the layout of all pages, and I used plugins and positioning css to make it easy to get the information you need.
                                     <div class="mt-auto d-flex gap-2 highlight-buttons">
                                         <a href="https://kieran-moody.netmatters-scs.co.uk/" target="_blank" class="btn btn-primary btn-hover">
                                             View Here
                                         </a>
-                                        <a href="examples.php#highlight-three-code" class="btn btn-secondary btn-hover">
-                                            Read More
+                                        <a href="examples.php#highlight-portfolio-code" class="btn btn-secondary btn-hover">
+                                            Learn More
                                         </a>
                                     </div>
 
@@ -84,7 +83,7 @@
                                             View Here
                                         </a>
                                         <a href="examples.php#highlight-one-code" class="btn btn-secondary btn-hover"> 
-                                            Read More
+                                            Learn More
                                         </a>
                                     </div>
 
@@ -120,7 +119,7 @@
                                             View Here
                                         </a>
                                         <a href="examples.php#highlight-two-code" class="btn btn-secondary btn-hover"> 
-                                            Read More
+                                            Learn More
                                         </a>
                                     </div>
 
@@ -156,7 +155,7 @@
                                             View Here
                                         </a>
                                         <a href="examples.php#highlight-three-code" class="btn btn-secondary btn-hover">
-                                            Read More
+                                            Learn More
                                         </a>
                                     </div>
 
@@ -186,7 +185,7 @@
                                             View Here
                                         </a>
                                         <a class="btn btn-secondary disabled btn-hover">
-                                            Read More
+                                            Learn More
                                         </a>
                                     </div>
 

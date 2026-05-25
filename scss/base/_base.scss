@@ -25,3 +25,13 @@ body {
     color: $primary-text;
 }
 
+.main-page {
+  pointer-events: auto;
+}
+.menu-active .main-page {
+  pointer-events: none;
+}
+
+.no-bullets {
+  list-style: none;
+}

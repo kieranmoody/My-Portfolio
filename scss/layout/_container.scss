@@ -43,9 +43,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: $primary-title;
+    background-color: $panels;
     color: white;
-    
+    font-size: 0.65rem;
 }
 
 .tech-stack p {
@@ -62,7 +62,35 @@ html {
     color:white;
 }
 
+#nav-backup {
+    display: none;
+}
+.js-disabled #nav-backup {
+    display:block;
+}
 
+.main-page::after,
+header::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+
+  background-color: rgba(0,0,0,0);
+  transition: background 0.4s ease;
+
+  pointer-events: none;
+}
+
+.menu-active .main-page::after,
+.menu-active header::after   {
+  background-color: rgba(0,0,0,0.4);
+  z-index: 999;
+}
+
+header::after {
+    position: static;
+    pointer-events: all;
+}
 
 
 

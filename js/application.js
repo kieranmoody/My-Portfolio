@@ -85,30 +85,22 @@ new TypeIt(".title-animate", {
 //hamburger gets clicked 
 
 document.addEventListener("DOMContentLoaded", function () {
-    //Select all navbar togglers and their target menus
-    const navTogglers = document.querySelectorAll('.navbar-toggler');
+    const toggler = document.querySelector('.navbar-toggler');
+    const website = document.getElementById("html");
 
-    navTogglers.forEach(toggler => {
-        const targetSelector = toggler.getAttribute('data-bs-target');
-        const menu = document.querySelector(targetSelector);
-        const bsCollapse = new bootstrap.Collapse(menu, { toggle: false });
+    let isAnimating = false;
 
-        //Hide toggler when menu opens
-        menu.addEventListener('show.bs.collapse', () => {
-            toggler.style.display = 'none';
-        });
+    toggler.addEventListener("click", function () {
 
-        //Show toggler when menu closes
-        menu.addEventListener('hide.bs.collapse', () => {
-            toggler.style.display = '';
-        });
+        if (isAnimating) return;
 
-        //Close menu if clicking outside
-        document.addEventListener('click', function (e) {
-            if (!menu.contains(e.target) && !toggler.contains(e.target)) {
-                bsCollapse.hide();
-            }
-        });
+        isAnimating = true;
+
+        website.classList.toggle("menu-active");
+
+        setTimeout(() => {
+            isAnimating = false;
+        }, 700); // matches CSS transition
     });
 });
 

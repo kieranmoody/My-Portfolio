@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id="html" lang="en">
     <?php require("partials/head.php") ?>
     <body>
         <?php require("partials/navigation.php") ?>
-        <section class="bg-dark text-white text-center py-5 position-relative">
-                <img src="images/title-background.jpg" class="position-absolute w-100 h-100 top-0 start-0 object-fit-cover opacity-50 title-image">
+        <section class="bg-dark text-white text-center py-5 position-relative main-page title">
+                
 
                 <div class="container position-relative">
                     <h1 class="display-4 text-white title-animate">More About Me</h1>
@@ -16,10 +16,10 @@
                 </div>
         </section>
 
-        <main class="py-5" id="about">
+        <main class="py-5 main-page" id="about">
             <div class="container">
 
-                <div class="row align-items-center mb-5">
+                <div class="row align-items-center mb-5" id="me">
                     <div class="col-md-6">
                         <p>
                         I have a degree in Politics, Philosophy, and Economics and a Masters in Politics from the University of Essex (2019–2024).
@@ -35,9 +35,56 @@
                         <img id="personal-profile" src="images/graduation-picture.jpg" class="img-thumbnail rounded shadow" alt="My graduation picture">
                     </div>
                 </div>
+                <div class="row align-items-center mb-5" id="qualifications">
+                    <div class="col-md-6 text-center">
+                        <h2>Qualifications</h2>
+                        <ul class="no-bullets">
+                            <li>Masters Degree in Politics</li>
+                            <li>Bachelors Degree in Politics, Philosophy, and Economics</li>
+                            <li>Alevels</li>
+                            <li>Admin</li>
+                            <li>Bookkeeping</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <h2>Tech Stack</h2>
+                        <ul class="no-bullets">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>PHP</li>
+                            <li>MySql</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <h2>Frameworks and Libraries I can use</h2>
+                        <ul class="no-bullets">
+                            <li>Laravel</li>
+                            <li>Jquery</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <h2>Plugins I have worked with</h2>
+                        <ul class="no-bullets">
+                            <li>jAlert</li>
+                            <li>Slick</li>
+                            <li>Tasty CSS-animated hamburgers</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row align-items-center mb-5" id="courses">
+                    <div class="col-md-4 text-center">
+                        <h2>Courses Completed</h2>
+                        <ul class="no-bullets">
+                            <li>jAlert</li>
+                            <li>Slick</li>
+                            <li>Tasty CSS-animated hamburgers</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                    </div>
 
-                <div class="row align-items-center mb-5" id="treehouse-desc">
-                    <div class="col-md-6">
+                    <div class="col-md-4 text-center" id="treehouse-desc">
                         <h3>Treehouse</h3>
                         <p>
                         Treehouse is an online learning platform covering HTML, C#, iOS development,
@@ -49,12 +96,13 @@
                         </a>
                     </div>
 
-                    <div class="col-md-6 text-center">
+                    <div class="col-md-4 text-center">
                         <img src="images/treehouse-score.png" class="img-fluid rounded shadow">
                     </div>
+                    
                 </div>
 
-                <div class="mb-5 text-center">
+                <div class="mb-5 text-center" id="scion-scheme">
                     <h3>Introduction to the Scion Coalition Scheme</h3>
                     <p>
                         The Scion Coalition Scheme is an intensive training programme run by Netmatters
@@ -66,9 +114,9 @@
                 
 
                 <div class="row align-items-center">
-                    <div class="col-md-6">
+                    <div class="col-md-6 text-end">
                         <h3>About Netmatters</h3>
-                        <ul>
+                        <ul class="no-bullets">
                             <li>Established 2008</li>
                             <li>Technology company</li>
                             <li>Training award winners</li>
@@ -76,7 +124,7 @@
                         </ul>
                     </div>
 
-                    <div class="col-md-6 text-center">
+                    <div class="col-md-6 text-start">
                         <a href="https://www.netmatters.co.uk/" target="_blank">
                             <img src="images/netmatters-logo.jpg" class="img-fluid rounded shadow btn-hover">
                         </a>
