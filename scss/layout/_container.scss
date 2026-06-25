@@ -32,6 +32,8 @@
 
 .slick-slide {
     margin: 0 10px;
+    border-radius: 50px;
+    overflow: hidden;
 }
 
 .projects-carousel img {
@@ -92,8 +94,45 @@ header::after {
     pointer-events: all;
 }
 
+.tech-stack p {
+    display: block;
+    padding: 5px 10px;
 
+    border-radius: 50%;
+    background-color: $primary-accent;
+}
+.image-holder {
+    background-color: $panels;
+    color:white;
+}
+.image-holder h4 {
+    color: white;
+    text-align: center;
+    display: block;
+    margin-top: 5px;
+}
 
+.contact-form {
+    background: #fff;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 15px 40px rgba(0,0,0,.08);
+    margin-top: 15px;
+}
 
+.form-control {
+    border-radius: 12px;
+    min-height: 56px;
+    border: 2px solid #e9ecef;
+}
+
+textarea.form-control {
+    min-height: 180px;
+}
+
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 4px rgba(13,110,253,.15);
+}
 
 

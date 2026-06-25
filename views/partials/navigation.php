@@ -14,12 +14,12 @@
         <ul class="navbar-nav me-auto">
             
             <li class="nav-item primary"><a class="nav-link active" href="index.php">Home</a></li>
+            <li class="nav-item secondary"><a class="nav-link secondary" href="index.php#index">Projects</a></li>
             <li class="nav-item primary"><a class="nav-link" href="about.php">About Me</a></li>
             <li class="nav-item secondary"><a class="nav-link secondary" href="about.php#me">More About Me</a></li>
             <li class="nav-item secondary"><a class="nav-link secondary" href="about.php#qualifications">Qualifications</a></li>
             <li class="nav-item secondary"><a class="nav-link secondary" href="about.php#courses">Courses Completed</a></li>
             <li class="nav-item secondary"><a class="nav-link secondary" href="about.php#scion-scheme">The Scion Scheme</a></li>
-            <li class="nav-item primary"><a class="nav-link" href="examples.php">Coding Examples</a></li>
             <li class="nav-item primary"><a class="nav-link" href="index.php#site-foot">Contact Me</a></li>
         </ul>
 

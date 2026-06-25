@@ -21,9 +21,11 @@
                     <h3 class="text-center">Projects</h3>
                     <div class="row g-4 mt-4 projects-carousel">
                         <!-- Highlight Portfolio -->
-                        <div class="col-md-6 col-lg-4 carousel-disabled">
+                        <div class="col-md-6 col-lg-4 home-card carousel-disabled">
                             <div class="card h-100 shadow-sm">
                                 <div class="image-holder">
+                                    <img src="images/highlight-portfolio.png" class="card-img-top" alt="An image of my portfolio">
+                                    <h4>Kieran's Portfolio</h4>
                                     <div class="tech-stack">
                                         <p>HTML</p>
                                         <p>PHP</p>
@@ -37,7 +39,7 @@
                                         <p>Slick</p>
                                         <p>jAlert</P>
                                     </div>
-                                    <img src="images/highlight-portfolio.png" class="card-img-top" alt="An image of my portfolio">
+                                    
                                 </div>
                                 <div class="card-body d-flex flex-column projects-mainpage">
                                     <p class="card-text">
@@ -46,8 +48,8 @@
                                         <a href="https://kieran-moody.netmatters-scs.co.uk/" target="_blank" class="btn btn-primary btn-hover">
                                             View Here
                                         </a>
-                                        <a href="examples.php#highlight-portfolio-code" class="btn btn-secondary btn-hover">
-                                            Learn More
+                                        <a href="https://github.com/kieranmoody/My-Portfolio" target="_blank" class="btn btn-secondary btn-hover">
+                                            Github
                                         </a>
                                     </div>
 
@@ -55,9 +57,11 @@
                             </div>
                         </div>
                         <!-- Highlight 1 -->
-                        <div class="col-md-6 col-lg-4 carousel-disabled">
+                        <div class="col-md-6 col-lg-4 home-card carousel-disabled">
                             <div class="card h-100 shadow-sm">
                                 <div class="image-holder">
+                                    <img src="images/highlight-one-netmatters.png" class="card-img-top" alt="An image of my copy of the netmatters website">
+                                    <h4>Fake Netmatters Site</h4>
                                     <div class="tech-stack">
                                         <p>HTML</p>
                                         <p>PHP</p>
@@ -69,7 +73,7 @@
                                         <p>jQuery</p>
                                         <p>Slick</p>
                                     </div>
-                                    <img src="images/highlight-one-netmatters.png" class="card-img-top" alt="An image of my copy of the netmatters website">
+                                    
                                 </div>
                                 
                                 <div class="card-body d-flex flex-column projects-mainpage">
@@ -82,8 +86,8 @@
                                         <a href="https://netmatters.kieran-moody.netmatters-scs.co.uk" target="_blank" class="btn btn-primary btn-hover">
                                             View Here
                                         </a>
-                                        <a href="examples.php#highlight-one-code" class="btn btn-secondary btn-hover"> 
-                                            Learn More
+                                        <a href="https://github.com/kieranmoody/Netmatters-Website-Copy" target="_blank" class="btn btn-secondary btn-hover"> 
+                                            Github
                                         </a>
                                     </div>
 
@@ -92,9 +96,11 @@
                         </div>
 
                         <!-- Highlight 2 -->
-                        <div class="col-md-6 col-lg-4 carousel-disabled">
+                        <div class="col-md-6 col-lg-4 home-card carousel-disabled">
                             <div class="card h-100 shadow-sm">
                                 <div class="image-holder">
+                                    <img src="images/highlight-two-javaarray.png" class="card-img-top" alt="An image of my random image generator">
+                                    <h4>Image Gallery</h4>
                                     <div class="tech-stack">
                                         <p>HTML</p>
                                         <p>CSS</p>
@@ -105,7 +111,7 @@
                                         <p>jQuery</p>
                                         <p>jAlert</p>
                                     </div>
-                                    <img src="images/highlight-two-javaarray.png" class="card-img-top" alt="An image of my random image generator">
+                                    
                                 </div>
                                 
                                 <div class="card-body d-flex flex-column projects-mainpage">
@@ -118,8 +124,8 @@
                                         <a href="http://js-array.kieran-moody.netmatters-scs.co.uk/" target="_blank" class="btn btn-primary btn-hover">
                                             View Here
                                         </a>
-                                        <a href="examples.php#highlight-two-code" class="btn btn-secondary btn-hover"> 
-                                            Learn More
+                                        <a href="https://github.com/kieranmoody/Javascript-Array-Assessment" target="_blank" class="btn btn-secondary btn-hover"> 
+                                            Github
                                         </a>
                                     </div>
 
@@ -128,10 +134,12 @@
                         </div>
 
                         <!-- Highlight 3 -->
-                        <div class="col-md-6 col-lg-4 carousel-disabled">
+                        <div class="col-md-6 col-lg-4 home-card carousel-disabled">
                             <div class="card h-100 shadow-sm">
 
                                 <div class="image-holder">
+                                    <img src="images/highlight-three-admin-panel.png" class="card-img-top" alt="An image of the front page of an admin panel, made with laravel">
+                                    <h4>Admin Panel</h4>
                                     <div class="tech-stack">
                                         <p>HTML</p>
                                         <p>PHP</p>
@@ -143,7 +151,7 @@
                                         <p>SASS</p>
                                         <p>Bootstrap</p>
                                     </div>
-                                    <img src="images/highlight-three-admin-panel.png" class="card-img-top" alt="An image of the front page of an admin panel, made with laravel">
+                                    
                                 </div>
                                 
                                 <div class="card-body d-flex flex-column projects-mainpage">
@@ -154,8 +162,44 @@
                                         <a href="https://laravel.kieran-moody.netmatters-scs.co.uk/" target="_blank" class="btn btn-primary btn-hover">
                                             View Here
                                         </a>
-                                        <a href="examples.php#highlight-three-code" class="btn btn-secondary btn-hover">
-                                            Learn More
+                                        <a href="https://github.com/kieranmoody/laravel_admin_panel" target="_blank" class="btn btn-secondary btn-hover">
+                                            Github
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Highlight 4 -->
+                        <div class="col-md-6 col-lg-4 home-card carousel-disabled">
+                            <div class="card h-100 shadow-sm">
+
+                                <div class="image-holder">
+                                    <img src="images/highlight-four-golden-chocolates.png" class="card-img-top" alt="An image of the front page of the Golden Chocolates site, made with wordpress">
+                                    <h4>Golden Chocolates</h4>
+                                    <div class="tech-stack">
+                                        <p>HTML</p>
+                                        <p>PHP</p>
+                                        <p>CSS</p>
+                                        <p>JavaScript</p>
+                                    </div>
+                                    <div class="tech-stack">
+                                        <p>Wordpress</p>
+                                    </div>
+                                    
+                                </div>
+                                
+                                <div class="card-body d-flex flex-column projects-mainpage">
+                                    <p class="card-text">
+                                        This is a site for a fictional company made with wordpress. It contains a for purpose theme, including a series of projects related pages. The pages are all designed with the Elementor plugin with a focus on making the design responsive where possible, it has a contact form via the Forminator plugin, and has SEO configuration using the Rank Math plugin. It has a focus on accessibility and performance, paying attention to the website's lighthouse score on all pages in mobile and desktop form.
+                                    </p>
+                                    <div class="mt-auto d-flex gap-2 highlight-buttons">
+                                        <a href="https://laravel.kieran-moody.netmatters-scs.co.uk/" target="_blank" class="btn btn-primary btn-hover">
+                                            View Here
+                                        </a>
+                                        <a href="https://github.com/kieranmoody/small-business-wordpress" target="_blank" class="btn btn-secondary btn-hover">
+                                            Github
                                         </a>
                                     </div>
 
@@ -164,16 +208,18 @@
                         </div>
 
                         <!-- Under Construction -->
-                        <div class="col-md-6 col-lg-4 carousel-disabled construction">
+                        <div class="col-md-6 col-lg-4 home-card carousel-disabled construction">
                             <div class="card h-100 shadow-sm">
                                 <div class="image-holder">
+                                    <img src="images/under-construction-temp-two.webp" class="card-img-top" alt="Under construction, no highlight to see">
+                                    <h4>Under Construction</h4>
                                     <div class="tech-stack">
                                         <p>Languages Used</p>
                                     </div>
                                     <div class="tech-stack">
                                         <p>Tools Used</p>
                                     </div>
-                                    <img src="images/under-construction-temp-two.webp" class="card-img-top" alt="Under construction, no highlight to see">
+                                    
                                 </div>
                                 
                                 <div class="card-body d-flex flex-column projects-mainpage">
@@ -185,7 +231,7 @@
                                             View Here
                                         </a>
                                         <a class="btn btn-secondary disabled btn-hover">
-                                            Learn More
+                                            Github
                                         </a>
                                     </div>
 
@@ -212,42 +258,44 @@
                             <a href="mailto:kieranmoody127@gmail.com">kieranmoody127@gmail.com</a>
                         </div>
                     </div>
-                    <form class="row g-3" id="foot-buttons" method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>#foot-buttons" onsubmit="return validateForm()" novalidate>
-                        <div class="col-12">
-                            <div class="row g-3">
-                                <div class="col-12 col-md-6">
-                                    <input type="text" class="form-control <?php echo $firstNameClass; ?>" id="first-name" name="first-name" placeholder="*First Name" value="<?php echo htmlspecialchars($firstName); ?>">
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <input type="text" class="form-control <?php echo $lastNameClass; ?>" id="last-name" name="last-name" placeholder="*Last Name" value="<?php echo htmlspecialchars($lastName); ?>">
+                    <div class="contact-form">
+                        <form class="row g-3" id="foot-buttons" method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>#foot-buttons" onsubmit="return validateForm()" novalidate>
+                            <div class="col-12">
+                                <div class="row g-3">
+                                    <div class="col-12 col-md-6">
+                                        <input type="text" class="form-control <?php echo $firstNameClass; ?>" id="first-name" name="first-name" placeholder="*First Name" value="<?php echo htmlspecialchars($firstName); ?>">
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <input type="text" class="form-control <?php echo $lastNameClass; ?>" id="last-name" name="last-name" placeholder="*Last Name" value="<?php echo htmlspecialchars($lastName); ?>">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-12">
-                            <input type="email" class="form-control <?php echo $emailClass; ?>" id="email-address" name="email-address" placeholder="*Email Address" value="<?php echo htmlspecialchars($email); ?>">
-                        </div>
-                        <div class="col-12">
-                            <input type="text" class="form-control <?php echo $subjectClass; ?>" id="subject" name="subject" placeholder="Subject" value="<?php echo htmlspecialchars($subject); ?>">
-                        </div>
-                        <div class="col-12">
-                            <textarea class="form-control <?php echo $messageClass; ?>" id="message" name="message" rows="5" placeholder="*Message"><?php echo htmlspecialchars($message); ?></textarea>
-                        </div>
-                        <div class="col-12">
-                            <button class="btn btn-primary w-100 btn-hover" type="submit">Submit</button>
-                        </div>
-                        <div class="col-12 alert" id="form-status" role="alert">
-                            <strong>Form Completed Successfully!</strong>
-                         </div>
-                        <?php
-                            if ($formSuccess) {
-                                $firstName = "";
-                                $lastName = "";
-                                $email = "";
-                                $subject = "";
-                                $message = "";
-                            }
-                        ?>
-                    </form>
+                            <div class="col-12">
+                                <input type="email" class="form-control <?php echo $emailClass; ?>" id="email-address" name="email-address" placeholder="*Email Address" value="<?php echo htmlspecialchars($email); ?>">
+                            </div>
+                            <div class="col-12">
+                                <input type="text" class="form-control <?php echo $subjectClass; ?>" id="subject" name="subject" placeholder="Subject" value="<?php echo htmlspecialchars($subject); ?>">
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control <?php echo $messageClass; ?>" id="message" name="message" rows="5" placeholder="*Message"><?php echo htmlspecialchars($message); ?></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary w-100 btn-hover" type="submit">Submit</button>
+                            </div>
+                            <div class="col-12 alert" id="form-status" role="alert">
+                                <strong>Form Completed Successfully!</strong>
+                            </div>
+                            <?php
+                                if ($formSuccess) {
+                                    $firstName = "";
+                                    $lastName = "";
+                                    $email = "";
+                                    $subject = "";
+                                    $message = "";
+                                }
+                            ?>
+                        </form>
+                    </div>
                 </div>
             </div>
         </main>
